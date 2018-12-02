@@ -528,6 +528,10 @@ body {
     text-align: left;
 }
 
+.sub input[type="submit"]:hover{
+    cursor: pointer;
+}
+
 .pay>img {
     margin-right: 10px;
 }
@@ -643,11 +647,16 @@ body {
     font-size: 12px;
     font-weight: 400;
     text-align: center;
+    margin-right: 5px;
+}
+
+.breadcrumbs a{
+    text-decoration: none;
+    color: #989898;
 }
 
 .breadcrumbs .current {
     background-color: #faef03;
-    width: 58px;
     outline: 3px solid #faef03;
 }
 
@@ -773,7 +782,7 @@ body {
     height: 160px;
     margin-top: 95px;
     margin-left: 30px;
-    margin-bottom: 29px;
+    margin-bottom: 623px;
 }
 
 .content_contact .brand .img {
