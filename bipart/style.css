@@ -1,28 +1,35 @@
 @font-face {
   font-family: "HelveticaNeueCyrBlack";
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Black.eot");
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Black.eot") format("embedded-opentype"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Black.woff") format("woff"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Black.ttf") format("truetype");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "HelveticaNeueCyrRoman";
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
-  src: url("../HelveticaNeueCyr//HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff") format("woff"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
+  src: url("fonts/HelveticaNeueCyr//HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "HelveticaNeueCyrMedium";
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot");
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff") format("woff"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "HelveticaNeueCyrBold";
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot");
-  src: url("../HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff") format("woff"), url("../HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot");
+  src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("fonts/ProximaNova/ProximaNovaT-Thin.eot");
+  src: url("fonts/ProximaNova/ProximaNovaT-Thin.eot") format("embedded-opentype"), url("fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff"), url("fonts/ProximaNova/ProximaNovaT-Thin.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -32,9 +39,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  outline: none;
 }
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 header,
 footer,
@@ -138,7 +147,6 @@ header .start_edu h3 {
 .main .start {
   width: 100%;
   background-image: url(images/sinii-fon.png);
-  background-color: #0fa5f9;
   padding-top: 107px;
   padding-bottom: 144px;
 }
@@ -153,47 +161,41 @@ header .start_edu h3 {
 .main .start .content article h3 {
   font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
-  font-size: 45px;
+  font-size: 34px;
   line-height: 60px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
 .main .start .content article h2 {
   font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 54px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
   line-height: 72px;
-  /* Приближение из-за подстановки шрифтов */
-  text-align: left;
+  text-align: center;
   background-color: #0053d3;
   width: 598px;
   height: 70px;
+  margin-left: -10px;
 }
 .main .start .content article h4 {
   font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
-  font-size: 34px;
-  /* Приближение из-за подстановки шрифтов */
+  font-size: 22px;
   font-weight: 900;
-  line-height: 71px;
-  /* Приближение из-за подстановки шрифтов */
+  line-height: 58px;
   text-align: left;
 }
 .main .start .content article .quick_start {
   font-family: HelveticaNeueCyrRoman;
   color: #ffffff;
   font-size: 17px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 27px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 453px;
   opacity: 0.8;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+  margin-top: 25px;
 }
 .main .start .content article .registration {
   display: table-cell;
@@ -451,6 +453,10 @@ header .start_edu h3 {
   width: 230px;
   margin-top: 33px;
 }
+.main .signals .work {
+  padding-bottom: 130px;
+  padding-top: 120px;
+}
 .main .signals .work .share_results {
   position: relative;
 }
@@ -458,69 +464,70 @@ header .start_edu h3 {
   display: block;
   position: absolute;
   z-index: -1;
+  left: -55px;
+  top: -75px;
 }
 .main .signals .work .share_results p {
   display: inline-block;
+  position: absolute;
   font-family: HelveticaNeueCyrRoman;
   color: #6f6f6f;
   font-size: 12px;
-  /* Приближение из-за подстановки шрифтов */
-  line-height: 29.26px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
+  left: 375px;
+  top: 375px;
+}
+.main .signals .work .get_access {
+  width: 541px;
+  margin-left: 1002px;
 }
 .main .signals .work .get_access h2 {
   font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  line-height: 76.231px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   transform: scaleY(1.0009);
-  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
   width: 436px;
 }
 .main .signals .work .get_access p {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 17px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 30px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 541px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 .main .signals .work .registration {
-  display: table-cell;
+  display: inline-block;
   border-radius: 34px;
   background-color: #f2e813;
   box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
   width: 282px;
   height: 72px;
-  vertical-align: middle;
   transition: all 1s ease;
 }
 .main .signals .work .registration h4 {
   font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
-  line-height: 29.26px;
-  /* Приближение из-за подстановки шрифтов */
+  line-height: 72px;
   text-align: center;
 }
-.main .signals .work span {
+.main .signals .work .registration:hover {
+  box-shadow: none;
+}
+.main .signals .work .access_link {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 29.26px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   border-bottom: 1px solid rgba(88, 89, 91, 0.22);
+  margin-left: 50px;
 }
 .main .last_articles {
   background-color: #ecf3fd;
@@ -622,6 +629,7 @@ header .start_edu h3 {
 }
 .main .course {
   padding-top: 102px;
+  padding-bottom: 189px;
 }
 .main .course h2 {
   font-family: HelveticaNeueCyrBlack;
@@ -701,6 +709,7 @@ header .start_edu h3 {
   /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   text-align: left;
+  text-transform: uppercase;
 }
 .main .course .course_container .description p {
   width: 265px;
@@ -709,6 +718,331 @@ header .start_edu h3 {
   font-size: 14px;
   /* Приближение из-за подстановки шрифтов */
   text-align: left;
+}
+.main .follow_us {
+  background-image: url(images/sinii-fon-bot.jpg);
+  padding-top: 58px;
+  padding-bottom: 54px;
+  padding-left: 304px;
+  position: relative;
+}
+.main .follow_us .coin1 {
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  top: -120px;
+  left: 566px;
+}
+.main .follow_us .coin2 {
+  width: 156px;
+  height: 156px;
+  filter: blur(5px);
+  position: absolute;
+  bottom: -70px;
+  left: 200px;
+}
+.main .follow_us .coin3 {
+  width: 520px;
+  height: 520px;
+  position: absolute;
+  bottom: -335px;
+  right: 344px;
+  filter: blur(5px);
+}
+.main .follow_us .main_field {
+  display: flex;
+}
+.main .follow_us .main_field .plan {
+  position: relative;
+}
+.main .follow_us .main_field .plan .range {
+  position: relative;
+  z-index: 1;
+}
+.main .follow_us .main_field .plan .blot {
+  position: absolute;
+  top: 25px;
+  left: 89px;
+}
+.main .follow_us .main_field .right_now {
+  text-align: center;
+  width: 420px;
+  margin-left: 80px;
+  margin-right: 90px;
+  margin-top: 45px;
+}
+.main .follow_us .main_field .right_now h2 {
+  font-family: HelveticaNeueCyrBlack;
+  color: #ffffff;
+  font-size: 39.96px;
+  font-weight: 900;
+  text-align: center;
+  transform: scaleY(1.0009);
+  display: inline-block;
+}
+.main .follow_us .main_field .right_now .blue_back {
+  background-color: #0053d3;
+  width: 325px;
+  height: 49px;
+  font-family: HelveticaNeueCyrBlack;
+  color: #ffffff;
+  font-size: 39.96px;
+  font-weight: 900;
+  line-height: 49px;
+  text-align: center;
+  transform: scaleY(1.0009);
+  margin-bottom: 19px;
+}
+.main .follow_us .main_field .right_now p {
+  font-family: HelveticaNeueCyrRoman;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  width: 420px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+.main .follow_us .main_field .sign_up {
+  text-align: center;
+}
+.main .follow_us .main_field .sign_up .registration {
+  display: block;
+  border-radius: 34px;
+  background-color: #f2e813;
+  box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
+  width: 282px;
+  height: 72px;
+  transition: all 1s ease;
+  margin-top: 74px;
+  margin-bottom: 28px;
+}
+.main .follow_us .main_field .sign_up .registration h4 {
+  font-family: HelveticaNeueCyrMedium;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 72px;
+  text-align: center;
+}
+.main .follow_us .main_field .sign_up .sign_in {
+  font-family: HelveticaNeueCyrRoman;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 29.26px;
+  text-align: left;
+  opacity: 0.7;
+  border-bottom: 1px solid #fff;
+}
+.main .bonus {
+  position: relative;
+  padding-top: 228px;
+  padding-bottom: 209px;
+  padding-left: 374px;
+}
+.main .bonus .bonus_text h2 {
+  width: 529px;
+  font-family: HelveticaNeueCyrBlack;
+  color: #323232;
+  font-size: 39.96px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+  transform: scaleY(1.0009);
+  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+.main .bonus .bonus_text p {
+  font-family: HelveticaNeueCyrRoman;
+  color: #323232;
+  font-size: 17px;
+  /* Приближение из-за подстановки шрифтов */
+  line-height: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 415px;
+  margin: 50px 0;
+}
+.main .bonus .bonus_text button {
+  border-radius: 34px;
+  background-color: #f2e813;
+  box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
+  width: 282px;
+  height: 72px;
+  border: none;
+  transition: all 1s ease;
+  font-family: HelveticaNeueCyrMedium;
+  color: #323232;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 500;
+}
+.main .bonus .bonus_text button:hover {
+  box-shadow: none;
+  cursor: pointer;
+}
+.main .bonus img {
+  position: absolute;
+  top: 163px;
+  left: 825px;
+}
+.main .review {
+  background-color: #ecf3fd;
+  padding-top: 90px;
+  padding-bottom: 131px;
+}
+.main .review h2 {
+  font-family: HelveticaNeueCyrBlack;
+  color: #323232;
+  font-size: 39.96px;
+  transform: scaleY(1.0009);
+  text-align: center;
+  margin-bottom: 75px;
+}
+.main .review .slider {
+  display: flex;
+  position: relative;
+}
+.main .review .block {
+  width: 631px;
+  height: 374px;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 40.42px 2.58px rgba(0, 0, 0, 0.07);
+}
+.main .review .block .photo {
+  width: 230px;
+  height: 374px;
+  background-image: url(images/Livello\ 27.jpg);
+  position: relative;
+}
+.main .review .block .photo img {
+  position: absolute;
+  width: 33px;
+  height: 53px;
+  top: 306px;
+  left: 21px;
+}
+.main .review .block article {
+  width: 401px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+.main .review .block article p {
+  width: 324px;
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 600;
+}
+.main .review .block article .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+.main .review .block article .row .name {
+  font-family: HelveticaNeueCyrBold;
+  color: #6799f4;
+  font-size: 18px;
+}
+.main .review .block article .row .info {
+  font-family: HelveticaNeueCyrRoman;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.main .review .block article .row .soc {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+  display: block;
+  text-align: center;
+  margin-top: 9px;
+}
+.main .review .block article .row .soc i {
+  color: white;
+  line-height: 28px;
+}
+.main .review .block article .row .first {
+  margin-left: 117px;
+}
+.main .review .block article .row .elem {
+  margin-left: 4px;
+}
+.main .review .left_item {
+  position: absolute;
+  left: -105px;
+  opacity: 0.5;
+}
+.main .review .center_item {
+  margin: 0 auto;
+}
+.main .review .right_item {
+  position: absolute;
+  right: -105px;
+  opacity: 0.5;
+}
+.main .review .pick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52px;
+}
+.main .review .pick .arrow {
+  position: relative;
+}
+.main .review .pick .arrow div {
+  background-color: rgba(50, 50, 50, 0.2);
+  height: 10px;
+  width: 2px;
+  transform: rotate(45deg);
+}
+.main .review .pick .arrow .bottom {
+  transform: rotate(135deg);
+  position: absolute;
+  top: 7px;
+}
+.main .review .pick .arrow:hover {
+  cursor: pointer;
+}
+.main .review .pick .left {
+  margin-right: 7px;
+  margin-top: -6.5px;
+}
+.main .review .pick .right {
+  margin-bottom: -6.5px;
+  margin-left: 7px;
+  transform: rotate(180deg);
+}
+.main .review .pick .round_small {
+  border-radius: 50%;
+  background-color: rgba(50, 50, 50, 0.2);
+  width: 12px;
+  height: 12px;
+  border: none;
+}
+.main .review .pick .round_medium {
+  border-radius: 50%;
+  background-color: rgba(50, 50, 50, 0.2);
+  width: 16px;
+  height: 16px;
+  border: none;
+}
+.main .review .pick .round_medium-first {
+  margin-left: 19px;
+  margin-right: 18px;
+  color: #0053d3;
+}
+.main .review .pick .round_medium-last {
+  margin-left: 18px;
+  margin-right: 19px;
+}
+.main .review .pick button:hover {
+  cursor: pointer;
+}
+.main .review .pick .active {
+  background-color: #679af3;
+  box-shadow: 0 0 10px 2px #679af3;
 }
 .main .quick_reg-bottom {
   display: flex;
@@ -859,4 +1193,60 @@ header .start_edu h3 {
 }
 .main .quick_reg-bottom form input[type="submit"]:hover {
   box-shadow: none;
+}
+footer {
+  background-image: url(images/bgfooter.png);
+  height: 132px;
+  display: flex;
+  padding-left: 376px;
+  flex-wrap: wrap;
+}
+footer .copy {
+  font-family: ProximaNova;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 29.26px;
+  text-align: left;
+  margin-right: 15px;
+  margin-top: 65px;
+}
+footer .explanation {
+  font-family: HelveticaNeueCyrMedium;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 43px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #0053d3;
+  width: 175px;
+  height: 43px;
+  margin-top: 53px;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 507px;
+  margin-left: 114px;
+  margin-right: 100px;
+  margin-top: 68px;
+}
+footer ul li a {
+  text-decoration: none;
+  font-family: HelveticaNeueCyrRoman;
+  color: #ffffff;
+  font-size: 17px;
+}
+footer h6 {
+  width: 150px;
+  font-family: HelveticaNeueCyrRoman;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  opacity: 0.5;
+  margin-top: 60px;
+}
+footer h6 span {
+  border-bottom: 1px solid #fff;
+  line-height: 29.26px;
 }
