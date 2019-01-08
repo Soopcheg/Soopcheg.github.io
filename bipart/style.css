@@ -54,7 +54,7 @@ header {
   display: flex;
   padding-bottom: 25px;
   box-sizing: content-box;
-  width: 61.5%;
+  width: 1167px;
   margin: 0 auto;
 }
 header .logo {
@@ -79,11 +79,10 @@ header .logo .name h1 {
   font-family: "HelveticaNeueCyrBlack";
   color: #ffffff;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
   line-height: 19px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
+  letter-spacing: 3px;
 }
 header .logo .name h3 {
   margin-top: 4px;
@@ -106,13 +105,11 @@ header nav ul li a {
   font-family: "HelveticaNeueCyrRoman";
   color: #323232;
   font-size: 17px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 18px;
-  /* Приближение из-за подстановки шрифтов */
+  transition: ease 1s all;
 }
 header nav ul li a:hover {
   color: #4599f5;
-  transition: 1s;
 }
 header .start_edu {
   margin-top: 28px;
@@ -134,18 +131,34 @@ header .start_edu h3 {
   font-family: "HelveticaNeueCyrMedium";
   color: #ffffff;
   font-size: 15px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 18px;
   padding-top: 3px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
+}
+.input-error {
+  border: red 2px solid !important;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999999;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999999;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999999;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999999;
 }
 .main {
   width: 100%;
 }
 .main .start {
-  width: 100%;
   background-image: url(images/sinii-fon.png);
   padding-top: 107px;
   padding-bottom: 144px;
@@ -211,10 +224,8 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 29.26px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
 }
 .main .start .content article .registration:hover {
@@ -235,9 +246,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   color: #ffffff;
   font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 20px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 256px;
   opacity: 1;
@@ -254,7 +263,7 @@ header .start_edu h3 {
 .main .quick_reg-top {
   display: flex;
   margin: 112px auto 94px auto;
-  width: 43%;
+  width: 809px;
 }
 .main .quick_reg-top .steps {
   margin-right: 134px;
@@ -264,9 +273,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   transform: scaleY(1.0009);
   width: 396px;
@@ -276,9 +283,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 379px;
   margin-bottom: 39px;
@@ -293,24 +298,21 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   text-align: center;
   vertical-align: middle;
   border-radius: 35px;
   margin-right: 30px;
+  transition: 1s ease all;
 }
 .main .quick_reg-top .steps .step span {
   font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 30px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
 .main .quick_reg-top .steps .margin {
@@ -347,9 +349,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 18px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 241px;
   margin-top: 23px;
@@ -368,9 +368,8 @@ header .start_edu h3 {
   font-size: 14px;
   padding-left: 37px;
   border-width: 1px;
-  border-color: #323232;
+  border-color: #9e9e9e;
   border-style: solid;
-  opacity: 0.5;
   width: 282px;
   height: 60px;
   border-radius: 35px;
@@ -381,7 +380,7 @@ header .start_edu h3 {
 .main .quick_reg-top form input[type="email"] {
   margin-bottom: 17px;
 }
-.main .quick_reg-top form input[type="submit"] {
+.main .quick_reg-top form button[type="button"] {
   border-radius: 34px;
   background-color: #f2e813;
   box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
@@ -391,15 +390,18 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 29.26px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
   transition: all 1s ease;
 }
-.main .quick_reg-top form input[type="submit"]:hover {
+.main .quick_reg-top form button[type="button"]:hover {
+  cursor: pointer;
   box-shadow: none;
+}
+.main .quick_reg-top form button[type="button"]:active {
+  position: relative;
+  top: 2px;
 }
 .main .free_express {
   background-color: #ecf3fd;
@@ -410,12 +412,9 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
   transform: scaleY(1.0009);
-  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
   width: 688px;
   margin: 0 auto;
 }
@@ -446,9 +445,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 22px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
   width: 230px;
   margin-top: 33px;
@@ -662,10 +659,9 @@ header .start_edu h3 {
   text-align: center;
   color: #ffffff;
   font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   border: none;
-  transition: all 3s cubic-bezier(0.43, 1.57, 0.59, -0.85);
+  transition: all ease 2s;
 }
 .main .course .course_container .screen .plus:hover {
   cursor: pointer;
@@ -706,18 +702,18 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrBold;
   color: #323232;
   font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
+  margin-bottom: 13px;
 }
 .main .course .course_container .description p {
-  width: 265px;
+  width: 270px;
   font-family: HelveticaNeueCyrMedium;
   color: #323232;
-  font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
+  font-size: 15px;
   text-align: left;
+  line-height: 1.5em;
 }
 .main .follow_us {
   background-image: url(images/sinii-fon-bot.jpg);
@@ -845,19 +841,15 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
   text-align: left;
   transform: scaleY(1.0009);
-  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
 }
 .main .bonus .bonus_text p {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 17px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 30px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 415px;
   margin: 50px 0;
@@ -873,7 +865,6 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
 }
 .main .bonus .bonus_text button:hover {
@@ -900,27 +891,35 @@ header .start_edu h3 {
 }
 .main .review .slider {
   display: flex;
+  justify-content: space-between;
   position: relative;
+  height: 374px;
 }
 .main .review .block {
+  position: absolute;
+  left: 50%;
   width: 631px;
   height: 374px;
   display: flex;
   background-color: #ffffff;
   box-shadow: 0px 0px 40.42px 2.58px rgba(0, 0, 0, 0.07);
+  transition: 1s ease all;
 }
 .main .review .block .photo {
+  position: relative;
   width: 230px;
   height: 374px;
-  background-image: url(images/Livello\ 27.jpg);
-  position: relative;
 }
-.main .review .block .photo img {
+.main .review .block .photo .logo {
   position: absolute;
   width: 33px;
   height: 53px;
   top: 306px;
   left: 21px;
+}
+.main .review .block .photo .face {
+  width: 230px;
+  height: 374px;
 }
 .main .review .block article {
   width: 401px;
@@ -969,18 +968,24 @@ header .start_edu h3 {
 .main .review .block article .row .elem {
   margin-left: 4px;
 }
+.main .review .left_item-hide {
+  left: 0;
+  transform: translateX(-135%);
+}
+.main .review .right_item-hide {
+  left: 100%;
+  transform: translateX(35%);
+}
 .main .review .left_item {
-  position: absolute;
-  left: -105px;
   opacity: 0.5;
+  transform: translateX(-1055px);
 }
 .main .review .center_item {
-  margin: 0 auto;
+  transform: translateX(-50%);
 }
 .main .review .right_item {
-  position: absolute;
-  right: -105px;
   opacity: 0.5;
+  transform: translateX(425px);
 }
 .main .review .pick {
   display: flex;
@@ -1005,11 +1010,11 @@ header .start_edu h3 {
 .main .review .pick .arrow:hover {
   cursor: pointer;
 }
-.main .review .pick .left {
+.main .review .pick #left {
   margin-right: 7px;
   margin-top: -6.5px;
 }
-.main .review .pick .right {
+.main .review .pick #right {
   margin-bottom: -6.5px;
   margin-left: 7px;
   transform: rotate(180deg);
@@ -1037,6 +1042,9 @@ header .start_edu h3 {
   margin-left: 18px;
   margin-right: 19px;
 }
+.main .review .pick button {
+  transition: 1s ease all;
+}
 .main .review .pick button:hover {
   cursor: pointer;
 }
@@ -1047,7 +1055,7 @@ header .start_edu h3 {
 .main .quick_reg-bottom {
   display: flex;
   margin: 108px auto 100px auto;
-  width: 43%;
+  width: 809px;
 }
 .main .quick_reg-bottom .steps {
   margin-right: 134px;
@@ -1086,15 +1094,14 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 18px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   text-align: center;
   vertical-align: middle;
   border-radius: 35px;
   margin-right: 30px;
+  transition: 1s ease all;
 }
 .main .quick_reg-bottom .steps .step span {
   font-family: HelveticaNeueCyrMedium;
@@ -1161,9 +1168,8 @@ header .start_edu h3 {
   font-size: 14px;
   padding-left: 37px;
   border-width: 1px;
-  border-color: #323232;
+  border-color: #9e9e9e;
   border-style: solid;
-  opacity: 0.5;
   width: 282px;
   height: 60px;
   border-radius: 35px;
@@ -1174,7 +1180,7 @@ header .start_edu h3 {
 .main .quick_reg-bottom form input[type="email"] {
   margin-bottom: 17px;
 }
-.main .quick_reg-bottom form input[type="submit"] {
+.main .quick_reg-bottom form button[type="button"] {
   border-radius: 34px;
   background-color: #f2e813;
   box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
@@ -1191,8 +1197,13 @@ header .start_edu h3 {
   text-align: center;
   transition: all 1s ease;
 }
-.main .quick_reg-bottom form input[type="submit"]:hover {
+.main .quick_reg-bottom form button[type="button"]:hover {
   box-shadow: none;
+  cursor: pointer;
+}
+.main .quick_reg-bottom form button[type="button"]:active {
+  position: relative;
+  top: 2px;
 }
 footer {
   background-image: url(images/bgfooter.png);
