@@ -9,6 +9,7 @@
         crossorigin="anonymous">-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/001-case.png" type="image/png">
     <title>Главная</title>
 </head>
 
@@ -77,10 +78,10 @@
                         своих <a href="#">персональных данных</a>.</p>
                 </div>
             </div>
-            <form action=""><input type="text" name="" id="" placeholder="Ваше имя">
-                <input type="text" name="" id="" placeholder="Ваш телефон">
-                <input type="email" name="" id="" placeholder="Ваш e-mail">
-                <input type="submit" value="Продолжить"></form>
+            <form action="" class="client_data"><input type="text" name="firstname" id="" placeholder="Ваше имя">
+                <input type="text" name="lastname" id="" placeholder="Ваш телефон">
+                <input type="email" name="email" id="" placeholder="Ваш e-mail">
+                <button type="button">Продолжить</button></form>
         </section>
         <section class="free_express">
             <h2>Бесплатное экспресс-обучение
@@ -224,7 +225,7 @@
                     <a class="registration" href="#">
                         <h4>Зарегистрироваться</h4>
                     </a>
-                    <a class="sign_in">Войти в личный кабинет</a>
+                    <a class="sign_in" href="#">Войти в личный кабинет</a>
                 </div>
             </div>
         </section>
@@ -242,8 +243,27 @@
         <section class="review">
             <h2>Отзывы учеников</h2>
             <div class="slider">
+                <div class="left_item-hide block">
+                    <div class="photo"><img class="logo" src="images/logo.png" alt="">
+                        <img class="face" src="images/devushki-lyudi-48352.jpg" alt=""></div>
+                    <article>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                            более менее осмысленного текста рыбы на русском языке.<br>
+                            <br>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать</p>
+                        <div class="row">
+                            <div>
+                                <h6 class="name">Мария Иванова</h6>
+                                <h6 class="info">29 лет, домохозяйка</h6>
+                            </div>
+                            <a href="https://www.facebook.com" class="soc first"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://vk.com/feed" class="soc elem"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
                 <div class="left_item block">
-                    <div class="photo"><img src="images/logo.png" alt=""></div>
+                    <div class="photo"><img class="logo" src="images/logo.png" alt="">
+                        <img class="face" src="images/devushki-lyudi-48378.jpg" alt=""></div>
                     <article>
                         <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
                             более менее осмысленного текста рыбы на русском языке.<br>
@@ -260,7 +280,8 @@
                     </article>
                 </div>
                 <div class="center_item block">
-                    <div class="photo"><img src="images/logo.png" alt=""></div>
+                    <div class="photo"><img class="logo" src="images/logo.png" alt="">
+                        <img class="face" src="images/Livello 27.jpg" alt=""></div>
                     <article>
                         <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
                             более менее осмысленного текста рыбы на русском языке.<br>
@@ -277,7 +298,26 @@
                     </article>
                 </div>
                 <div class="right_item block">
-                    <div class="photo"><img src="images/logo.png" alt=""></div>
+                    <div class="photo"><img class="logo" src="images/logo.png" alt="">
+                        <img class="face" src="images/zhivotnye-48375.jpg" alt=""></div>
+                    <article>
+                        <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                            более менее осмысленного текста рыбы на русском языке.<br>
+                            <br>
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать</p>
+                        <div class="row">
+                            <div>
+                                <h6 class="name">Мария Иванова</h6>
+                                <h6 class="info">29 лет, домохозяйка</h6>
+                            </div>
+                            <a href="https://www.facebook.com" class="soc first"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://vk.com/feed" class="soc elem"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="right_item-hide block">
+                    <div class="photo"><img class="logo" src="images/logo.png" alt="">
+                        <img class="face" src="images/lyudi-muzhchiny-48356.jpg" alt=""></div>
                     <article>
                         <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
                             более менее осмысленного текста рыбы на русском языке.<br>
@@ -294,8 +334,9 @@
                     </article>
                 </div>
             </div>
+            
             <div class="pick">
-                <div class="arrow left">
+                <div id="left" class="arrow">
                     <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
@@ -304,7 +345,7 @@
                 <button type="button" class="round_medium active"></button>
                 <button type="button" class="round_medium round_medium-last"></button>
                 <button type="button" class="round_small"></button>
-                <div class="arrow right">
+                <div id="right" class="arrow">
                     <div class="top"></div>
                     <div class="bottom"></div>
                 </div>
@@ -326,10 +367,10 @@
                         своих <a href="#">персональных данных</a>.</p>
                 </div>
             </div>
-            <form action=""><input type="text" name="" id="" placeholder="Ваше имя">
-                <input type="text" name="" id="" placeholder="Ваш телефон">
-                <input type="email" name="" id="" placeholder="Ваш e-mail">
-                <input type="submit" value="Продолжить"></form>
+            <form action="" class="client_data"><input type="text" name="firstname" id="" placeholder="Ваше имя">
+                <input type="text" name="lastname" id="" placeholder="Ваш телефон">
+                <input type="email" name="email" id="" placeholder="Ваш e-mail">
+                <button type="button">Продолжить</button></form>
         </section>
     </div>
     <footer>
@@ -344,6 +385,8 @@
         </ul>
         <h6 class="dev">Сайт разработал: <span>Давыдов А.Н.</span></h6>
     </footer>
+    <script src="js/in-view.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
