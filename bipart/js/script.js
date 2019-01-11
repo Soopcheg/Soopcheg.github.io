@@ -21,14 +21,19 @@ window.onload = function () {
     }
 
     function Validation() {
+        this.validateName = function (name) {
+            var ren = /([а-яёa-z]{2,}[\-\s]?)/;
+            return ren.test(String(name).toLowerCase());
+        }
+
+        this.validatePhone = function (phone) {
+            var rep = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+            return rep.test(phone);
+        }        
+
         this.validateEmail = function (email) {
             var ree = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return ree.test(String(email).toLowerCase());
-        }
-
-        this.validateName = function validateName(name) {
-            var ren = /([а-яёa-z]{2,}[\-\s]?)/;
-            return ren.test(String(name).toLowerCase());
         }
     }
 
@@ -37,21 +42,22 @@ window.onload = function () {
     GetAll('.quick_reg-top input, .quick_reg-bottom input').forEach(function (item) {
         item.onchange = function () {
             var selector = '.' + item.parentNode.parentNode.classList[0] + ' input[name="' + item.getAttribute('name') + '"]';
-            var option;
-            item.getAttribute('name') == 'email' ? option = 1 : option = 0;
 
             var getField = GetSingle(selector);
 
-            if (!(option == 1 ? valid.validateEmail(getField.value) : valid.validateName(getField.value)))
-                getField.classList.add('input-error');
-            else getField.classList.remove('input-error');
+            if (getField.getAttribute('name') === 'firstname') 
+                valid.validateName(getField.value) ?  getField.classList.remove('input-error') : getField.classList.add('input-error');
+            else if (getField.getAttribute('name') === 'phone') 
+                valid.validatePhone(getField.value) ?  getField.classList.remove('input-error') : getField.classList.add('input-error');
+            else if (getField.getAttribute('name') === 'email')
+                valid.validateEmail(getField.value) ?  getField.classList.remove('input-error') : getField.classList.add('input-error');
         }
     })
 
     GetAll('.quick_reg-top button, .quick_reg-bottom button').forEach(function (item) {
         item.onclick = function () {
             var check = 0;
-            var input=GetAll('.' + item.parentNode.parentNode.classList[0] + ' input');
+            var input = GetAll('.' + item.parentNode.parentNode.classList[0] + ' input');
             input.forEach(function (item) {
                 if ((item.value === '') || (!(valid.validateName(item.value)))) {
                     item.classList.add('input-error')
@@ -65,13 +71,13 @@ window.onload = function () {
                 steps[2].classList.remove('current');
                 steps[1].classList.add('current');
                 steps[3].classList.add('current');
-                GetAll('.quick_reg-top form, .quick_reg-bottom form').forEach(function(item){
-                    item.childNodes.forEach(function(item){
+                GetAll('.quick_reg-top form, .quick_reg-bottom form').forEach(function (item) {
+                    item.childNodes.forEach(function (item) {
                         item.remove();
                     })
-                    var newElem=document.createElement('div');
-                    newElem.innerText="Рот ебал";
-                    newElem.style.margin='auto';
+                    var newElem = document.createElement('div');
+                    newElem.innerText = "Рот ебал";
+                    newElem.style.margin = 'auto';
                     item.appendChild(newElem, item);
                 })
             }
