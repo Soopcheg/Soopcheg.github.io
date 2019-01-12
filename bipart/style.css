@@ -314,6 +314,7 @@ header .start_edu h3 {
   font-weight: 500;
   line-height: 25px;
   text-align: left;
+  transition: 1s ease color;
 }
 .main .quick_reg-top .steps .margin {
   display: table-cell;
@@ -453,6 +454,9 @@ header .start_edu h3 {
 .main .signals .work {
   padding-bottom: 130px;
   padding-top: 120px;
+  width: 1171px;
+  display: flex;
+  margin: 0 auto;
 }
 .main .signals .work .share_results {
   position: relative;
@@ -460,23 +464,21 @@ header .start_edu h3 {
 .main .signals .work .share_results img {
   display: block;
   position: absolute;
-  z-index: -1;
-  left: -55px;
-  top: -75px;
+  top: -79px;
+  left: -421px;
 }
 .main .signals .work .share_results p {
   display: inline-block;
-  position: absolute;
   font-family: HelveticaNeueCyrRoman;
   color: #6f6f6f;
-  font-size: 12px;
+  font-size: 13px;
   text-align: left;
-  left: 375px;
-  top: 375px;
+  margin-top: 373px;
 }
 .main .signals .work .get_access {
   width: 541px;
-  margin-left: 1002px;
+  margin-left: 304px;
+  margin-top: -3px;
 }
 .main .signals .work .get_access h2 {
   font-family: HelveticaNeueCyrBlack;
@@ -493,7 +495,7 @@ header .start_edu h3 {
   font-size: 17px;
   line-height: 30px;
   text-align: left;
-  width: 541px;
+  width: 542px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
@@ -636,7 +638,6 @@ header .start_edu h3 {
   font-weight: 900;
   text-align: center;
   transform: scaleY(1.0009);
-  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
   margin-bottom: 74px;
 }
 .main .course .course_container {
@@ -649,11 +650,35 @@ header .start_edu h3 {
   width: 867px;
   height: 577px;
 }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 227, 163, 0.6);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 227, 163, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 227, 163, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 227, 163, 0.6);
+    box-shadow: 0 0 0 0 rgba(0, 227, 163, 0.6);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(0, 227, 163, 0);
+    box-shadow: 0 0 0 10px rgba(0, 227, 163, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(0, 227, 163, 0);
+    box-shadow: 0 0 0 0 rgba(0, 227, 163, 0);
+  }
+}
 .main .course .course_container .screen .plus {
   position: relative;
   border-radius: 50%;
   background-color: #00e3a3;
-  box-shadow: 0 0 0 5px #dafbf1;
   width: 26px;
   height: 26px;
   text-align: center;
@@ -661,32 +686,33 @@ header .start_edu h3 {
   font-size: 14px;
   font-weight: 700;
   border: none;
-  transition: all ease 2s;
-}
-.main .course .course_container .screen .plus:hover {
   cursor: pointer;
-  box-shadow: none;
-  transform: scale(1.2, 1.2);
+  animation: pulse 2s infinite;
 }
 .main .course .course_container .screen .express {
   left: 247px;
   top: 54px;
+  animation-delay: 0s;
 }
 .main .course .course_container .screen .homework {
   top: 297px;
   left: 348px;
+  animation-delay: 0.6s;
 }
 .main .course .course_container .screen .chat {
   top: 372px;
   left: 222px;
+  animation-delay: 1.2s;
 }
 .main .course .course_container .screen .program {
   top: 94px;
   left: 515px;
+  animation-delay: 0.3s;
 }
 .main .course .course_container .screen .sertificate {
   top: 366px;
   left: 557px;
+  animation-delay: 0.9s;
 }
 .main .course .course_container .description {
   padding-top: 64px;
@@ -697,6 +723,7 @@ header .start_edu h3 {
   height: 255px;
   margin-top: 126px;
   margin-left: -27px;
+  transition: 1s ease opacity;
 }
 .main .course .course_container .description h4 {
   font-family: HelveticaNeueCyrBold;
@@ -1167,6 +1194,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   font-size: 14px;
   padding-left: 37px;
+  padding-right: 37px;
   border-width: 1px;
   border-color: #9e9e9e;
   border-style: solid;
