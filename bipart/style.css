@@ -368,6 +368,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   font-size: 14px;
   padding-left: 37px;
+  padding-right: 37px;
   border-width: 1px;
   border-color: #9e9e9e;
   border-style: solid;
@@ -1134,10 +1135,8 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 30px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 500;
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
 }
 .main .quick_reg-bottom .steps .margin {
@@ -1174,9 +1173,7 @@ header .start_edu h3 {
   font-family: HelveticaNeueCyrRoman;
   color: #323232;
   font-size: 14px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 18px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 241px;
   margin-top: 23px;
