@@ -187,4 +187,20 @@ window.onload = function () {
     }
 
     Slider();
+
+
+    //media
+
+    var burger=GetSingle('nav .burger');
+
+    burger.onclick = function () {
+        var menu=GetSingle('nav ul');
+        if (GetSingle('nav .burger-active')) {
+            burger.classList.remove('burger-active');
+            menu.classList.remove('nav-active')
+        } else {
+            burger.classList.add('burger-active');
+            menu.classList.add('nav-active')
+        }
+    }
 }
