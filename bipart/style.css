@@ -1385,6 +1385,9 @@ footer .footer_container h6 span {
   .main .start .content article h4 {
     font-size: 16px;
   }
+  .main .start .content article .quick_start {
+    width: auto;
+  }
   .main .start .content .preview {
     display: none;
   }
