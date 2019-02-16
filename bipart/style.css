@@ -1,37 +1,37 @@
 @font-face {
-  font-family: "HelveticaNeueCyrBlack";
+  font-family: "HelveticaNeueCyr";
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot");
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
 }
 @font-face {
-  font-family: "HelveticaNeueCyrRoman";
+  font-family: "HelveticaNeueCyr";
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
   src: url("fonts/HelveticaNeueCyr//HelveticaNeueCyr-Roman.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
 }
 @font-face {
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyr";
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot");
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
 }
 @font-face {
-  font-family: "HelveticaNeueCyrBold";
+  font-family: "HelveticaNeueCyr";
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot");
   src: url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.eot") format("embedded-opentype"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.woff") format("woff"), url("fonts/HelveticaNeueCyr/HelveticaNeueCyr-Bold.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
 }
 @font-face {
   font-family: "ProximaNova";
   src: url("fonts/ProximaNova/ProximaNovaT-Thin.eot");
   src: url("fonts/ProximaNova/ProximaNovaT-Thin.eot") format("embedded-opentype"), url("fonts/ProximaNova/ProximaNovaT-Thin.woff") format("woff"), url("fonts/ProximaNova/ProximaNovaT-Thin.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: 200;
 }
 * {
   margin: 0;
@@ -44,6 +44,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  font-family: "HelveticaNeueCyr";
 }
 header,
 footer,
@@ -76,7 +77,6 @@ header .logo .name h1 {
   height: 37px;
   display: table-cell;
   vertical-align: middle;
-  font-family: "HelveticaNeueCyrBlack";
   color: #ffffff;
   font-size: 16px;
   font-weight: 900;
@@ -86,9 +86,9 @@ header .logo .name h1 {
 }
 header .logo .name h3 {
   margin-top: 4px;
-  font-family: "HelveticaNeueCyrRoman";
+  font-weight: 700;
   color: #323232;
-  font-size: 10px;
+  font-size: 9.5px;
   text-align: left;
 }
 header nav {
@@ -116,7 +116,7 @@ header nav ul {
   justify-content: space-between;
 }
 header nav ul li a {
-  font-family: "HelveticaNeueCyrRoman";
+  font-weight: 400;
   color: #323232;
   font-size: 17px;
   line-height: 18px;
@@ -142,7 +142,6 @@ header .start_edu img {
   margin-right: 5px;
 }
 header .start_edu h3 {
-  font-family: "HelveticaNeueCyrMedium";
   color: #ffffff;
   font-size: 15px;
   font-weight: 500;
@@ -172,6 +171,10 @@ header .start_edu h3 {
 .main {
   width: 100%;
 }
+.main button span {
+  font-weight: 500;
+  font-family: "HelveticaNeueCyr";
+}
 .main .start {
   background-image: url(images/sinii-fon.png);
   padding-top: 107px;
@@ -186,7 +189,6 @@ header .start_edu h3 {
   margin-top: 15px;
 }
 .main .start .content article h3 {
-  font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 34px;
   line-height: 60px;
@@ -194,7 +196,6 @@ header .start_edu h3 {
   text-align: left;
 }
 .main .start .content article h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 54px;
   font-weight: 900;
@@ -206,7 +207,6 @@ header .start_edu h3 {
   margin-left: -10px;
 }
 .main .start .content article h4 {
-  font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 22px;
   font-weight: 900;
@@ -214,7 +214,7 @@ header .start_edu h3 {
   text-align: left;
 }
 .main .start .content article .quick_start {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #ffffff;
   font-size: 17px;
   line-height: 27px;
@@ -235,7 +235,6 @@ header .start_edu h3 {
   transition: all 1s ease;
 }
 .main .start .content article .registration h4 {
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -257,7 +256,7 @@ header .start_edu h3 {
 .main .start .content article .access p {
   margin-top: 25px;
   display: inline-block;
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #ffffff;
   font-size: 14px;
   line-height: 20px;
@@ -284,7 +283,6 @@ header .start_edu h3 {
   margin-top: -8px;
 }
 .main .quick_reg-top .steps h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
   font-weight: 900;
@@ -294,7 +292,7 @@ header .start_edu h3 {
   margin-bottom: 43px;
 }
 .main .quick_reg-top .steps p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 16px;
   line-height: 25px;
@@ -309,7 +307,6 @@ header .start_edu h3 {
   border-style: solid;
   width: 170px;
   height: 61px;
-  font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 18px;
   font-weight: 500;
@@ -322,7 +319,6 @@ header .start_edu h3 {
   transition: 1s ease all;
 }
 .main .quick_reg-top .steps .step span {
-  font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 30px;
   font-weight: 500;
@@ -361,7 +357,7 @@ header .start_edu h3 {
   height: 9px;
 }
 .main .quick_reg-top .steps .process_data p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 14px;
   line-height: 18px;
@@ -379,7 +375,7 @@ header .start_edu h3 {
 }
 .main .quick_reg-top form input[type="text"],
 .main .quick_reg-top form input[type="email"] {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   font-size: 14px;
   padding-left: 37px;
   padding-right: 37px;
@@ -403,7 +399,6 @@ header .start_edu h3 {
   width: 282px;
   height: 72px;
   border: none;
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -425,7 +420,6 @@ header .start_edu h3 {
   padding-bottom: 73px;
 }
 .main .free_express h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
   font-weight: 900;
@@ -458,7 +452,7 @@ header .start_edu h3 {
   text-align: center;
 }
 .main .free_express ul li p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 16px;
   line-height: 22px;
@@ -484,7 +478,7 @@ header .start_edu h3 {
 }
 .main .signals .work .share_results p {
   display: inline-block;
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #6f6f6f;
   font-size: 13px;
   text-align: left;
@@ -496,7 +490,6 @@ header .start_edu h3 {
   margin-top: -3px;
 }
 .main .signals .work .get_access h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
   font-weight: 900;
@@ -505,7 +498,7 @@ header .start_edu h3 {
   width: 436px;
 }
 .main .signals .work .get_access p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 17px;
   line-height: 30px;
@@ -524,7 +517,6 @@ header .start_edu h3 {
   transition: all 1s ease;
 }
 .main .signals .work .registration h4 {
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -535,7 +527,7 @@ header .start_edu h3 {
   box-shadow: none;
 }
 .main .signals .work .access_link {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 14px;
   line-height: 29.26px;
@@ -549,15 +541,11 @@ header .start_edu h3 {
   padding-top: 74px;
 }
 .main .last_articles h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  /* Приближение из-за подстановки шрифтов */
   text-align: center;
   transform: scaleY(1.0009);
-  /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
 }
 .main .last_articles .articles {
   display: flex;
@@ -593,7 +581,7 @@ header .start_edu h3 {
   margin-left: 14px;
 }
 .main .last_articles .articles .articles_item .article_info span {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #6f6f6f;
   font-size: 12px;
   text-align: left;
@@ -605,10 +593,8 @@ header .start_edu h3 {
   width: 305px;
   margin: 0 auto;
   margin-bottom: 33px;
-  font-family: HelveticaNeueCyrBold;
   color: #323232;
   font-size: 19px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 700;
   text-align: center;
 }
@@ -627,7 +613,6 @@ header .start_edu h3 {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 13.87px;
   font-weight: 500;
@@ -643,14 +628,26 @@ header .start_edu h3 {
   padding-bottom: 189px;
 }
 .main .course h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
   text-align: center;
   transform: scaleY(1.0009);
   margin-bottom: 74px;
+}
+.main .course .plus {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #00e3a3;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  animation: pulse 2s infinite;
 }
 .main .course .course_container {
   display: flex;
@@ -687,48 +684,38 @@ header .start_edu h3 {
     box-shadow: 0 0 0 0 rgba(0, 227, 163, 0);
   }
 }
-.main .course .course_container .screen .plus {
+.main .course .course_container .screen .buttons {
   position: relative;
-  border-radius: 50%;
-  background-color: #00e3a3;
-  width: 26px;
-  height: 26px;
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  border: none;
-  cursor: pointer;
-  animation: pulse 2s infinite;
 }
-.main .course .course_container .screen .express {
-  left: 247px;
+.main .course .course_container .screen .buttons .express {
+  left: 368px;
   top: 54px;
   animation-delay: 0s;
 }
-.main .course .course_container .screen .homework {
+.main .course .course_container .screen .buttons .homework {
   top: 297px;
   left: 348px;
   animation-delay: 0.6s;
 }
-.main .course .course_container .screen .chat {
+.main .course .course_container .screen .buttons .chat {
   top: 372px;
-  left: 222px;
+  left: 251px;
   animation-delay: 1.2s;
 }
-.main .course .course_container .screen .program {
+.main .course .course_container .screen .buttons .program {
   top: 94px;
-  left: 515px;
+  left: 575px;
   animation-delay: 0.3s;
 }
-.main .course .course_container .screen .sertificate {
+.main .course .course_container .screen .buttons .sertificate {
   top: 366px;
-  left: 557px;
+  left: 648px;
   animation-delay: 0.9s;
 }
 .main .course .course_container .description {
   padding-top: 64px;
   padding-left: 91px;
+  padding-right: 70px;
   background-image: url(images/window.png);
   background-size: cover;
   width: 427px;
@@ -738,7 +725,6 @@ header .start_edu h3 {
   transition: 1s ease opacity;
 }
 .main .course .course_container .description h4 {
-  font-family: HelveticaNeueCyrBold;
   color: #323232;
   font-size: 18px;
   font-weight: 700;
@@ -748,11 +734,14 @@ header .start_edu h3 {
 }
 .main .course .course_container .description p {
   width: 270px;
-  font-family: HelveticaNeueCyrMedium;
+  font-weight: 500;
   color: #323232;
   font-size: 15px;
   text-align: left;
   line-height: 1.5em;
+}
+.main .course .mobile_version {
+  display: none;
 }
 .main .follow_us {
   background-image: url(images/sinii-fon-bot.jpg);
@@ -808,7 +797,6 @@ header .start_edu h3 {
   margin-top: 45px;
 }
 .main .follow_us .main_field .right_now h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 39.96px;
   font-weight: 900;
@@ -820,7 +808,6 @@ header .start_edu h3 {
   background-color: #0053d3;
   width: 325px;
   height: 49px;
-  font-family: HelveticaNeueCyrBlack;
   color: #ffffff;
   font-size: 39.96px;
   font-weight: 900;
@@ -830,12 +817,12 @@ header .start_edu h3 {
   margin-bottom: 19px;
 }
 .main .follow_us .main_field .right_now p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #ffffff;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  width: 420px;
+  width: 425px;
   margin: 0 auto;
   opacity: 0.5;
 }
@@ -854,7 +841,6 @@ header .start_edu h3 {
   margin-bottom: 28px;
 }
 .main .follow_us .main_field .sign_up .registration h4 {
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -862,7 +848,7 @@ header .start_edu h3 {
   text-align: center;
 }
 .main .follow_us .main_field .sign_up .sign_in {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #ffffff;
   font-size: 15px;
   line-height: 29.26px;
@@ -880,7 +866,6 @@ header .start_edu h3 {
 }
 .main .bonus .bonus_text h2 {
   width: 529px;
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
   font-weight: 900;
@@ -888,7 +873,7 @@ header .start_edu h3 {
   transform: scaleY(1.0009);
 }
 .main .bonus .bonus_text p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 17px;
   line-height: 30px;
@@ -904,7 +889,6 @@ header .start_edu h3 {
   height: 72px;
   border: none;
   transition: all 1s ease;
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -923,7 +907,7 @@ header .start_edu h3 {
   padding-bottom: 131px;
 }
 .main .review h2 {
-  font-family: HelveticaNeueCyrBlack;
+  font-weight: 900;
   color: #323232;
   font-size: 39.96px;
   transform: scaleY(1.0009);
@@ -969,10 +953,9 @@ header .start_edu h3 {
 }
 .main .review .block article p {
   width: 324px;
-  font-family: HelveticaNeueCyrRoman;
   font-size: 16px;
   line-height: 27px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .main .review .block article .row {
   display: flex;
@@ -980,14 +963,13 @@ header .start_edu h3 {
   margin-top: 35px;
 }
 .main .review .block article .row .name {
-  font-family: HelveticaNeueCyrBold;
+  font-weight: 700;
   color: #6799f4;
   font-size: 18px;
 }
 .main .review .block article .row .info {
-  font-family: HelveticaNeueCyrRoman;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 21px;
 }
 .main .review .block article .row .soc {
@@ -1103,24 +1085,19 @@ header .start_edu h3 {
   margin-top: -8px;
 }
 .main .quick_reg-bottom .steps h2 {
-  font-family: HelveticaNeueCyrBlack;
   color: #323232;
   font-size: 39.96px;
-  /* Приближение из-за подстановки шрифтов */
   font-weight: 900;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   transform: scaleY(1.0009);
   width: 396px;
   margin-bottom: 43px;
 }
 .main .quick_reg-bottom .steps p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 16px;
-  /* Приближение из-за подстановки шрифтов */
   line-height: 25px;
-  /* Приближение из-за подстановки шрифтов */
   text-align: left;
   width: 379px;
   margin-bottom: 39px;
@@ -1132,7 +1109,6 @@ header .start_edu h3 {
   border-style: solid;
   width: 170px;
   height: 61px;
-  font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 18px;
   font-weight: 500;
@@ -1145,7 +1121,6 @@ header .start_edu h3 {
   transition: 1s ease all;
 }
 .main .quick_reg-bottom .steps .step span {
-  font-family: HelveticaNeueCyrMedium;
   color: #4599f5;
   font-size: 30px;
   font-weight: 500;
@@ -1183,7 +1158,7 @@ header .start_edu h3 {
   height: 9px;
 }
 .main .quick_reg-bottom .steps .process_data p {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #323232;
   font-size: 14px;
   line-height: 18px;
@@ -1201,7 +1176,7 @@ header .start_edu h3 {
 }
 .main .quick_reg-bottom form input[type="text"],
 .main .quick_reg-bottom form input[type="email"] {
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   font-size: 14px;
   padding-left: 37px;
   padding-right: 37px;
@@ -1225,7 +1200,6 @@ header .start_edu h3 {
   width: 282px;
   height: 72px;
   border: none;
-  font-family: HelveticaNeueCyrMedium;
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -1260,7 +1234,6 @@ footer .footer_container .copy {
   margin-top: 60px;
 }
 footer .footer_container .explanation {
-  font-family: HelveticaNeueCyrMedium;
   color: #ffffff;
   font-size: 15px;
   line-height: 43px;
@@ -1281,13 +1254,12 @@ footer .footer_container ul {
 }
 footer .footer_container ul li a {
   text-decoration: none;
-  font-family: HelveticaNeueCyrRoman;
+  font-weight: 400;
   color: #ffffff;
   font-size: 17px;
 }
 footer .footer_container h6 {
   width: 150px;
-  font-family: HelveticaNeueCyrRoman;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
@@ -1362,6 +1334,9 @@ footer .footer_container h6 span {
     margin-left: auto;
     margin-right: auto;
   }
+  .main {
+    overflow-x: hidden;
+  }
   .main .start {
     width: 100%;
   }
@@ -1374,16 +1349,18 @@ footer .footer_container h6 span {
     margin-right: auto;
   }
   .main .start .content article h3 {
-    font-size: 26px;
+    font-size: 6vw;
+    line-height: 12vw;
   }
   .main .start .content article h2 {
     height: 60px;
     line-height: 60px;
-    font-size: 34px;
+    font-size: 8vw;
     width: 100%;
   }
   .main .start .content article h4 {
-    font-size: 16px;
+    font-size: 3.8vw;
+    line-height: 10vw;
   }
   .main .start .content article .quick_start {
     width: auto;
@@ -1404,6 +1381,7 @@ footer .footer_container h6 span {
   .main .quick_reg-bottom .steps h2 {
     margin-bottom: 0;
     width: 100%;
+    font-size: 8.5vw;
   }
   .main .quick_reg-top .steps .step,
   .main .quick_reg-bottom .steps .step {
@@ -1426,6 +1404,7 @@ footer .footer_container h6 span {
   }
   .main .free_express h2 {
     width: 100%;
+    font-size: 8.5vw;
   }
   .main .free_express ul {
     width: 100%;
@@ -1456,11 +1435,11 @@ footer .footer_container h6 span {
   }
   .main .signals .work .get_access h2 {
     width: 100%;
-    font-size: 36px;
+    font-size: 8.5vw;
   }
   .main .signals .work .get_access p {
     width: 100%;
-    font-size: 16px;
+    font-size: 4vw;
     line-height: 1.5em;
   }
   .main .signals .work .get_access .access_link {
@@ -1478,6 +1457,7 @@ footer .footer_container h6 span {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    font-size: 8.5vw;
   }
   .main .last_articles .articles {
     width: 100%;
@@ -1488,11 +1468,50 @@ footer .footer_container h6 span {
     margin: 0 auto;
     margin-bottom: 5%;
   }
+  .main .last_articles .articles .articles_item h3 {
+    width: 100%;
+    font-size: 5vw;
+  }
   .main .last_articles .articles .articles_item .article_preview {
     width: 100%;
   }
   .main .last_articles .articles .articles_item:last-child {
     margin-bottom: 0;
+  }
+  .main .course h2 {
+    font-size: 8.5vw;
+  }
+  .main .course .course_container {
+    display: none;
+  }
+  .main .course .mobile_version {
+    display: block;
+  }
+  .main .course .mobile_version article {
+    width: 90%;
+    margin: 5px auto;
+  }
+  .main .course .mobile_version article .header {
+    background: linear-gradient(0deg, #4391e7 0%, #469bf7 100%);
+    padding: 10px;
+  }
+  .main .course .mobile_version article .header .plus {
+    display: inline-block;
+    position: static;
+    margin-right: 5px;
+  }
+  .main .course .mobile_version article .header h4 {
+    display: inline-block;
+    font-size: 4vw;
+  }
+  .main .course .mobile_version article .text {
+    border: 2px solid #469bf7;
+    transition: 0.3s all;
+    font-size: 0;
+  }
+  .main .course .mobile_version article .text:hover {
+    padding: 2px 5px;
+    font-size: 3.7vw;
   }
   .main .follow_us .coin1,
   .main .follow_us .coin2,
@@ -1507,6 +1526,13 @@ footer .footer_container h6 span {
   .main .follow_us .main_field .right_now {
     width: 100%;
     margin: 0 auto;
+  }
+  .main .follow_us .main_field .right_now h2 {
+    font-size: 8.5vw;
+  }
+  .main .follow_us .main_field .right_now .blue_back {
+    font-size: 8.5vw;
+    width: 70%;
   }
   .main .follow_us .main_field .right_now p {
     width: 95%;
@@ -1527,11 +1553,11 @@ footer .footer_container h6 span {
   }
   .main .bonus .bonus_text h2 {
     width: 100%;
-    font-size: 33px;
+    font-size: 7.5vw;
   }
   .main .bonus .bonus_text p {
     width: 100%;
-    font-size: 16px;
+    font-size: 4vw;
     line-height: 1.5em;
     margin: 5% 0;
   }
@@ -1539,8 +1565,15 @@ footer .footer_container h6 span {
     margin: 0 auto;
     display: block;
   }
+  .main .review h2 {
+    font-size: 8.5vw;
+    margin-bottom: 15%;
+  }
   .main .review .slider .block {
     width: 100%;
+  }
+  .main .review .slider .block .photo {
+    display: none;
   }
   .main .review .slider .block article {
     width: 100%;
@@ -1570,5 +1603,47 @@ footer .footer_container h6 span {
   footer .footer_container .explanation {
     margin-top: 0;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main .start .content article .quick_start {
+    font-size: 4vw;
+  }
+  .main .quick_reg-top .steps p,
+  .main .quick_reg-bottom .steps p {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.5em;
+  }
+  .main .free_express ul li {
+    width: 100%;
+  }
+  .main .course {
+    padding-bottom: 30%;
+  }
+  .main .follow_us .main_field .right_now p {
+    font-size: 4.5vw;
+    width: 90%;
+  }
+  .main .review .slider .block {
+    transition: 0.5s;
+  }
+  .main .review .slider .block article {
+    padding-right: 3%;
+  }
+  .main .review .slider .block article p {
+    width: 100%;
+    font-size: 4.5vw;
+    line-height: 1.7em;
+  }
+  .main .review .slider .block article .row {
+    margin-top: 10%;
+  }
+  .main .review .slider .block article .row .name,
+  .main .review .slider .block article .row .info {
+    font-size: 4vw;
+  }
+  .main .review .slider .block article .row .first {
+    margin-left: 30%;
   }
 }
