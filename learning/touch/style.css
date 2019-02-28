@@ -1,0 +1,11 @@
+#touch:hover{
+    cursor: pointer;
+}
+
+img{
+    display: none;
+}
+
+.img{
+    display: block;
+}

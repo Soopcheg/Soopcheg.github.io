@@ -1,0 +1,28 @@
+h6{
+    font-size: 18px;
+}
+
+h6:hover{
+    cursor: pointer;
+}
+
+input:focus{
+    background-color: #f8f8f8;
+    outline: none;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.necessary{
+    transition: 1s ease;
+}
+
+.error{
+    background-color: #c23939;
+}
+
+.message{
+    color: red;
+}
