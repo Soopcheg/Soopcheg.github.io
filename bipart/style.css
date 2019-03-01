@@ -43,7 +43,6 @@
 }
 body {
   width: 100%;
-  overflow-x: hidden;
   font-family: "HelveticaNeueCyr";
 }
 header,
@@ -1572,8 +1571,11 @@ footer .footer_container h6 span {
     border: 2px solid #469bf7;
     transition: 0.3s all;
     font-size: 0;
+    margin-top: -1%;
+    position: relative;
+    z-index: -1;
   }
-  .main .course .mobile_version article .text:hover {
+  .main .course .mobile_version article .text-visible {
     padding: 2px 5px;
     font-size: 3.7vw;
   }
@@ -1669,7 +1671,7 @@ footer .footer_container h6 span {
     font-size: 8.5vw;
   }
   .main .last_articles .articles {
-    width: 100%;
+    width: 85%;
     flex-direction: column;
   }
   .main .last_articles .articles .articles_item {
@@ -1709,7 +1711,31 @@ footer .footer_container h6 span {
     margin: 3% auto;
   }
 }
+@media screen and (max-width: 630px) {
+  .main .slider .block {
+    width: 85%;
+    height: auto;
+    padding: 5%;
+  }
+  .main .slider .block .photo {
+    display: none;
+  }
+  .main .slider .block article {
+    width: 100%;
+    margin-top: 10%;
+  }
+  .main .slider .block article p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .slider .block article .row {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 500px) {
+  .body-nav {
+    overflow-y: hidden;
+  }
   header {
     flex-wrap: wrap;
     width: 100%;
@@ -1751,18 +1777,18 @@ footer .footer_container h6 span {
     position: absolute;
     z-index: 1;
     top: 95px;
-    right: -100%;
+    right: 100%;
     width: 100%;
     background: linear-gradient(0deg, #4391e7 0%, #469bf7 100%);
     transition: .3s right;
-    padding-top: 30%;
-    padding-bottom: 30%;
-    height: 100vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    height: 90vh;
   }
   header nav ul li {
     text-align: center;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 5vh;
     color: #f8f8f8;
     font-size: 20px;
     line-height: 20px;
@@ -1776,8 +1802,8 @@ footer .footer_container h6 span {
     display: block;
   }
   header nav ul .phone {
-    padding-top: 10%;
-    margin-bottom: 5%;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
   }
   header nav .nav-active {
     display: block;
@@ -1797,13 +1823,15 @@ footer .footer_container h6 span {
     margin-bottom: 15%;
   }
   .main .review .slider .block {
+    width: 98%;
+    height: auto;
+    padding: 3%;
+  }
+  .main .review .slider .block article p {
     width: 100%;
   }
-  .main .review .slider .block .photo {
-    display: none;
-  }
-  .main .review .slider .block article {
-    width: 100%;
+  .main .review .slider .block article .row {
+    justify-content: left;
   }
   footer {
     width: 100%;
@@ -1872,5 +1900,13 @@ footer .footer_container h6 span {
   }
   .main .review .slider .block article .row .first {
     margin-left: 30%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .main .review .slider .block article {
+    margin-left: 0;
+  }
+  .main .review .pick {
+    margin-top: 0;
   }
 }
