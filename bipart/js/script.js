@@ -2,16 +2,6 @@
 
 window.onload = function () {
 
-    // inView('.coin1').on('enter', function (el) {
-    //     el.style.opacity = 0.5;
-    // })
-
-    // inView('.plus').on('enter', function(el){
-    //     setInterval(function(){
-    //         el.style['boxShadow'] ='0 0 0 10px #dafbf1';
-    //     }, 1000)
-    // })
-
     function GetSingle(selector) {
         return document.querySelector(selector);
     }
@@ -184,6 +174,26 @@ window.onload = function () {
                 } while (current != number)
             }
         })
+
+        //Сенсорный слайдер-начало
+        var initialPoint;
+        var finalPoint;
+        var slider = GetSingle('.main .review .slider');
+
+        slider.addEventListener('touchstart', function (event) {
+            initialPoint = event.changedTouches[0].screenX;
+        });
+
+        slider.addEventListener('touchend', function (event) {
+            finalPoint = event.changedTouches[0].screenX;
+            if (initialPoint > finalPoint) {
+                Right();
+            }
+            if (initialPoint < finalPoint) {
+                Left();
+            }
+        })
+        //Сенсорный слайдер-конец
     }
 
     Slider();
@@ -191,16 +201,34 @@ window.onload = function () {
 
     //media
 
-    var burger=GetSingle('nav .burger');
+    var burger = GetSingle('nav .burger');
 
     burger.onclick = function () {
-        var menu=GetSingle('nav ul');
+        var menu = GetSingle('nav ul');
+        var body = GetSingle('body');
         if (GetSingle('nav .burger-active')) {
             burger.classList.remove('burger-active');
             menu.classList.remove('nav-active')
+            body.classList.remove('body-nav');
         } else {
             burger.classList.add('burger-active');
-            menu.classList.add('nav-active')
+            menu.classList.add('nav-active');
+            body.classList.add('body-nav');
         }
     }
+
+    var buttonsMini = GetAll(".main .course .mobile_version article .header .plus");
+
+    buttonsMini.forEach(function (buttonMini) {
+        buttonMini.onclick = function () {
+            var text = buttonMini.parentNode.nextElementSibling;
+            if (text.className == "text") {
+                text.classList.add("text-visible");
+                buttonMini.innerText="-";
+            } else {
+                text.classList.remove("text-visible");
+                buttonMini.innerText="+";
+            }
+        }
+    })
 }
