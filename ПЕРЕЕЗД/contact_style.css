@@ -15,6 +15,7 @@
 * {
   padding: 0;
   margin: 0;
+  outline: none;
 }
 body {
   font-family: 'Century Gothic';
@@ -26,49 +27,65 @@ body .content {
   width: 1444px;
   margin: 0 auto;
 }
-body header {
+.navigation li {
+  margin-right: 40px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navigation li:last-child {
+  margin-right: 0;
+}
+header {
   background-color: #ffffff;
   box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
   padding-bottom: 34px;
   padding-top: 41px;
 }
-body header img {
+header .logo-top {
   margin-top: 8px;
+  height: 100%;
 }
-body header nav ul {
-  list-style: none;
-  font-weight: bold;
-  font-size: 18px;
+header .navigation {
   padding-top: 13px;
 }
-body header nav ul li a {
+header .navigation a {
   color: #000000;
   transition: ease 0.3s color;
 }
-body header nav ul li :hover {
+header .navigation a:hover {
   color: #ffc254;
 }
-body header .contact {
+header .contact {
   text-align: end;
+  padding-right: 45px;
+}
+header .contact__tel {
+  display: block;
   color: #010000;
   font-size: 18px;
   font-weight: 700;
-  padding-right: 45px;
 }
-body main {
+header .contact__email {
+  display: block;
+  color: #010000;
+  font-size: 18px;
+  font-weight: 700;
+}
+main {
   padding-top: 133px;
   padding-bottom: 147px;
 }
-body main h2 {
+main h2 {
   color: #000000;
   font-size: 36px;
   font-weight: bold;
 }
-body main .map {
+main .map {
   position: relative;
   margin-top: 95px;
 }
-body main .map .contact_main {
+main .map__contact {
   position: absolute;
   left: 20px;
   top: 111px;
@@ -78,19 +95,19 @@ body main .map .contact_main {
   width: auto;
   display: inline-block;
 }
-body main .map .contact_main h5 {
+main .map__contact h5 {
   margin-top: 26px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
 }
-body main .map .contact_main h6 {
+main .map__contact p {
   color: #000000;
   font-size: 18px;
   font-weight: 400;
   margin-top: -5px;
 }
-body main .map .address {
+main .map__guide {
   position: absolute;
   background-color: #ffffff;
   box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
@@ -98,13 +115,16 @@ body main .map .address {
   top: 105px;
   left: 441px;
 }
-body main .map .address h6 {
+main .map__guide img {
+  height: 100%;
+}
+main .map__guide h6 {
   color: #000000;
   font-size: 14px;
   font-weight: 400;
   opacity: 0.6;
 }
-body main .map .address .corner {
+main .map__guide .corner {
   background-image: url(images/corner.png);
   position: absolute;
   background-size: cover;
@@ -112,12 +132,12 @@ body main .map .address .corner {
   height: 35px;
   bottom: -10px;
 }
-body main form {
+main form {
   margin-top: 97px;
   padding-left: 9px;
 }
-body main form input[type="text"],
-body main form input[type="email"] {
+main form input[type="text"],
+main form input[type="email"] {
   padding-left: 30px;
   padding-right: 30px;
   border: none;
@@ -132,7 +152,7 @@ body main form input[type="email"] {
   font-size: 16px;
   font-weight: 400;
 }
-body main form textarea {
+main form textarea {
   resize: none;
   border-radius: 7px;
   background-color: rgba(255, 255, 255, 0.76);
@@ -143,7 +163,7 @@ body main form textarea {
   padding: 24px 26px;
   margin-bottom: 50px;
 }
-body main form input[type="submit"] {
+main form input[type="submit"] {
   border-radius: 8px;
   background-color: #cc9f26;
   width: 293px;
@@ -153,37 +173,41 @@ body main form input[type="submit"] {
   font-size: 18px;
   font-weight: 700;
 }
-body footer {
+footer {
   background-color: #cc9f26;
   padding-top: 42px;
   padding-bottom: 10px;
 }
-body footer ul {
-  list-style: none;
-  font-size: 18px;
-  font-weight: 700;
+footer .logo-bottom {
+  height: 100%;
+}
+footer .navigation {
   padding-top: 6px;
 }
-body footer ul li a {
+footer .navigation a {
   color: #ffffff;
 }
-body footer .contact {
+footer .contact {
   text-align: end;
+  font-size: 18px;
+  font-weight: 700;
+}
+footer .contact__tel {
+  display: block;
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
 }
-body footer .menu {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: 400;
-  opacity: 0.7;
+footer .contact__email {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
 }
-body footer .made {
+footer .made {
   text-align: end;
 }
-body footer .foot {
+footer .foot {
   color: rgba(251, 251, 251, 0.74);
   font-size: 16px;
   font-weight: 400;
