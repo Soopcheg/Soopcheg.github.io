@@ -30,10 +30,6 @@ body {
 body a {
   text-decoration: none !important;
 }
-body .content {
-  width: 1444px;
-  margin: 0 auto;
-}
 .navigation li {
   margin-right: 40px;
   list-style: none;
@@ -88,66 +84,8 @@ main h2 {
   font-size: 36px;
   font-weight: bold;
 }
-main .map {
-  position: relative;
-  margin-top: 95px;
-}
-main .map__contact {
-  position: absolute;
-  left: 20px;
-  top: 111px;
-  background-color: #ffffff;
-  box-shadow: 0px 7px 12px 4px rgba(0, 0, 0, 0.23);
-  padding: 33px 85px 53px 24px;
-  width: auto;
-  display: inline-block;
-}
-main .map__contact h3 {
-  margin-top: 22px;
-  color: #000000;
-  font-size: 18px;
-  font-weight: 700;
-}
-main .map__contact p {
-  color: #000000;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: -6px;
-  margin-bottom: 0;
-}
-main .map__guide {
-  position: absolute;
-  background-color: #ffffff;
-  box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
-  padding: 12px 32px 16px 29px;
-  top: 105px;
-  left: 441px;
-}
-main .map__guide img {
-  height: 100%;
-}
-main .map__guide p {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 400;
-  opacity: 0.5;
-  margin-bottom: 0;
-  margin-top: 3px;
-}
-main .map__guide::before {
-  content: '';
-  border: 10px solid transparent;
-  border-top: 10px solid #fff;
-  position: absolute;
-  bottom: -20px;
-  left: 20px;
-}
-main form {
-  margin-top: 97px;
-  padding-left: 9px;
-}
-main form input[type="text"],
-main form input[type="email"] {
+main .inputs input[type="text"],
+main .inputs input[type="email"] {
   padding-left: 30px;
   padding-right: 30px;
   border: none;
@@ -161,6 +99,10 @@ main form input[type="email"] {
   width: 298px;
   font-size: 16px;
   font-weight: 400;
+}
+main form {
+  margin-top: 97px;
+  padding-left: 9px;
 }
 main form textarea {
   resize: none;
@@ -182,6 +124,64 @@ main form input[type="submit"] {
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
+}
+.map {
+  position: relative;
+  margin-top: 95px;
+}
+.map__contact {
+  position: absolute;
+  left: 20px;
+  top: 111px;
+  background-color: #ffffff;
+  box-shadow: 0px 7px 12px 4px rgba(0, 0, 0, 0.23);
+  padding: 33px 85px 53px 24px;
+  width: auto;
+  display: inline-block;
+  left: 2%;
+  top: 19.4%;
+}
+.map__contact h3 {
+  margin-top: 22px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.map__contact p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -6px;
+  margin-bottom: 0;
+}
+.map__guide {
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
+  padding: 12px 32px 16px 29px;
+  top: 105px;
+  left: 441px;
+  top: 22%;
+  left: 49%;
+}
+.map__guide img {
+  height: 100%;
+}
+.map__guide p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+.map__guide::before {
+  content: '';
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
 }
 footer {
   background-color: #cc9f26;
@@ -222,4 +222,66 @@ footer .foot {
   font-size: 16px;
   font-weight: 400;
   padding-top: 10px;
+}
+@media screen and (min-width: 1340px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1440px;
+  }
+}
+@media screen and (max-width: 1339px) and (min-width: 1201px) {
+  main .contacts {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  main .map-google {
+    width: 100%;
+  }
+  main .application {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .map {
+    margin-top: 65px;
+  }
+  main .map iframe {
+    width: 100%;
+  }
+  main .inputs {
+    display: inline-block;
+  }
+  main .inputs input[type="text"],
+  main .inputs input[type="email"] {
+    display: block;
+  }
+  main form {
+    margin-top: 65px;
+  }
+  main form textarea {
+    margin-left: 12.5%;
+    width: 500px;
+    height: 260px;
+    margin-bottom: -90px;
+  }
+  main form input[type="submit"] {
+    width: 298px;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main form textarea {
+    width: auto;
+    min-width: 293px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main form textarea {
+    margin-bottom: 50px;
+    margin-left: 0;
+    width: 298px;
+  }
 }

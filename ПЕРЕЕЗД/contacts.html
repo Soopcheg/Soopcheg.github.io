@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div class="container-fluid content">
+        <div class="container">
             <div class="row justify-content-between px-3">
                 <img src="./images/logo.png" alt="ПЕРЕЕЗД.COM" class="logo-top">
                 <nav>
@@ -32,13 +32,13 @@
     </header>
     <main>
         <h1 class="visually-hidden">ПЕРЕЕЗД.COM</h1>
-        <div class="container-fluid content">
+        <div class="container">
             <div class="row">
-                <section class="col-9">
+                <section class="col-xl-9 col-12 order-xl-0 order-1 contacts">
                     <h2>Наши контакы</h2>
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7552.651663375973!2d37.635724612076345!3d55.75126193526439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1552383712372"
-                            width="914" height="566" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            width="914" height="566" frameborder="0" style="border:0" class="map-google" allowfullscreen></iframe>
                         <div class="map__contact">
                             <h3>Телефон</h3>
                             <p>+7-999-999-99-99</p>
@@ -54,14 +54,17 @@
                         </address>
                     </div>
                 </section>
-                <section class="col-3">
+                <section class="col-xl-3 col-12 order-xl-1 order-0 application">
                     <h2>Оставьте заявку</h2>
-                    <form action="">
-                        <input type="text" name="name" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Имя">
-                        <input type="text" name="surname" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Фамилия">
-                        <input type="text" name="phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" placeholder="Телефон">
-                        <input type="email" name="email" placeholder="Почта">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                    <form action="" class="d-md-block d-flex flex-column">
+                        <div class="inputs">
+                            <input type="text" name="name" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Имя">
+                            <input type="text" name="surname" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Фамилия">
+                            <input type="text" name="phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
+                                placeholder="Телефон">
+                            <input type="email" name="email" placeholder="Почта">
+                        </div>
+                        <textarea name="" placeholder="Комментарий"></textarea>
                         <input type="submit" value="Отправить заявку">
                     </form>
                 </section>
@@ -69,7 +72,7 @@
         </div>
     </main>
     <footer>
-        <div class="container-fluid content">
+        <div class="container">
             <div class="row justify-content-between px-3">
                 <img src="./images/logo-bottom.png" alt="ПЕРЕЕЗД.COM" class="logo-bottom">
                 <ul class="d-flex justify-content-between navigation">
