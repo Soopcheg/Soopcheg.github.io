@@ -17,6 +17,13 @@
   margin: 0;
   outline: none;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 body {
   font-family: 'Century Gothic';
 }
@@ -91,12 +98,12 @@ main .map__contact {
   top: 111px;
   background-color: #ffffff;
   box-shadow: 0px 7px 12px 4px rgba(0, 0, 0, 0.23);
-  padding: 31px 85px 53px 24px;
+  padding: 33px 85px 53px 24px;
   width: auto;
   display: inline-block;
 }
-main .map__contact h5 {
-  margin-top: 26px;
+main .map__contact h3 {
+  margin-top: 22px;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
@@ -105,32 +112,35 @@ main .map__contact p {
   color: #000000;
   font-size: 18px;
   font-weight: 400;
-  margin-top: -5px;
+  margin-top: -6px;
+  margin-bottom: 0;
 }
 main .map__guide {
   position: absolute;
   background-color: #ffffff;
   box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
-  padding: 16px 32px 16px 29px;
+  padding: 12px 32px 16px 29px;
   top: 105px;
   left: 441px;
 }
 main .map__guide img {
   height: 100%;
 }
-main .map__guide h6 {
+main .map__guide p {
   color: #000000;
   font-size: 14px;
   font-weight: 400;
-  opacity: 0.6;
+  opacity: 0.5;
+  margin-bottom: 0;
+  margin-top: 3px;
 }
-main .map__guide .corner {
-  background-image: url(images/corner.png);
+main .map__guide::before {
+  content: '';
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
   position: absolute;
-  background-size: cover;
-  width: 35px;
-  height: 35px;
-  bottom: -10px;
+  bottom: -20px;
+  left: 20px;
 }
 main form {
   margin-top: 97px;

@@ -14,23 +14,24 @@
     <header>
         <div class="container-fluid content">
             <div class="row justify-content-between px-3">
-                    <img src="./images/logo.png" alt="ПЕРЕЕЗД.COM" class="logo-top">
-                    <nav>
-                        <ul class="d-flex navigation">
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Клиентам</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Автопарк</a></li>
-                        </ul>
-                    </nav>
-                    <address class="contact">
-                        <a href="tel:+7(999)777-99-77" class="contact__tel">+7-999-777-99--77</a>
-                        <a href="mailto:mail@example.com" class="contact__email">mail@example.com</a>
-                    </address>
+                <img src="./images/logo.png" alt="ПЕРЕЕЗД.COM" class="logo-top">
+                <nav>
+                    <ul class="d-flex navigation">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Автопарк</a></li>
+                    </ul>
+                </nav>
+                <address class="contact">
+                    <a href="tel:+7(999)777-99-77" class="contact__tel">+7-999-777-99--77</a>
+                    <a href="mailto:mail@example.com" target="_blank" class="contact__email">mail@example.com</a>
+                </address>
             </div>
         </div>
     </header>
     <main>
+        <h1 class="visually-hidden">ПЕРЕЕЗД.COM</h1>
         <div class="container-fluid content">
             <div class="row">
                 <section class="col-9">
@@ -39,28 +40,27 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7552.651663375973!2d37.635724612076345!3d55.75126193526439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1552383712372"
                             width="914" height="566" frameborder="0" style="border:0" allowfullscreen></iframe>
                         <div class="map__contact">
-                            <h5>Телефон</h5>
+                            <h3>Телефон</h3>
                             <p>+7-999-999-99-99</p>
-                            <h5>Почта</h5>
+                            <h3>Почта</h3>
                             <p>maill@gmail.com</p>
-                            <h5>Часы работы</h5>
+                            <h3>Часы работы</h3>
                             <p>пн-пт: 8.00 - 21:00</p>
                             <p>сб-вс: 10.00 - 16.00</p>
                         </div>
                         <address class="map__guide">
                             <img src="./images/logo-min.png" alt="ПЕРЕЕЗД.COM">
-                            <h6>г.Москва, ул. Ленина, д63, офис 2</h6>
-                            <div class="corner"></div>
+                            <p>г.Москва, ул. Ленина, д63, офис 2</p>
                         </address>
                     </div>
                 </section>
                 <section class="col-3">
                     <h2>Оставьте заявку</h2>
                     <form action="">
-                        <input type="text" name="" id="" placeholder="Имя">
-                        <input type="text" name="" id="" placeholder="Фамилия">
-                        <input type="text" name="" id="" placeholder="Телефон">
-                        <input type="email" name="" id="" placeholder="Почта">
+                        <input type="text" name="name" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Имя">
+                        <input type="text" name="surname" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Фамилия">
+                        <input type="text" name="phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" placeholder="Телефон">
+                        <input type="email" name="email" placeholder="Почта">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
                         <input type="submit" value="Отправить заявку">
                     </form>
@@ -80,7 +80,7 @@
                 </ul>
                 <address class="contact">
                     <a href="tel:+7(999)777-99-77" class="contact__tel">+7-999-777-99--77</a>
-                    <a href="mailto:mail@example.com" class="contact__email">mail@example.com</a>
+                    <a href="mailto:mail@example.com" target="_blank" class="contact__email">mail@example.com</a>
                 </address>
             </div>
             <div class="row">
