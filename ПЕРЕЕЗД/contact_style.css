@@ -229,7 +229,7 @@ footer .foot {
     max-width: 1440px;
   }
 }
-@media screen and (max-width: 1339px) and (min-width: 1201px) {
+@media screen and (max-width: 1339px) and (min-width: 1200px) {
   main .contacts {
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
