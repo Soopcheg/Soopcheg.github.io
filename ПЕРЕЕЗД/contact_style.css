@@ -280,13 +280,21 @@ footer .foot {
   main h2 {
     text-align: center;
   }
+  main .map {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  main .map iframe {
+    order: 1;
+  }
   main .map__contact {
     position: static;
-    display: flex;
     padding-left: 5px;
     padding-right: 5px;
-    justify-content: space-between;
     margin-top: 25px;
+    order: 0;
+    box-shadow: none;
   }
   main .map__guide {
     display: none;
@@ -310,22 +318,6 @@ footer .foot {
   main {
     padding-top: 100px;
     padding-bottom: 60px;
-  }
-  main .map__contact {
-    display: flex;
-    padding-left: 25px;
-    padding-right: 25px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  main .map__tel {
-    order: 0;
-  }
-  main .map__email {
-    order: 2;
-  }
-  main .map__hours {
-    order: 1;
   }
 }
 @media screen and (max-width: 390px) {
