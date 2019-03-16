@@ -159,10 +159,8 @@ main form input[type="submit"] {
   background-color: #ffffff;
   box-shadow: 0px 1px 32px 0px rgba(0, 0, 0, 0.1);
   padding: 12px 32px 16px 29px;
-  top: 105px;
-  left: 441px;
-  top: 22%;
-  left: 49%;
+  top: 34.5%;
+  left: 40.8%;
 }
 .map__guide img {
   height: 100%;
@@ -180,7 +178,7 @@ main form input[type="submit"] {
   border: 10px solid transparent;
   border-top: 10px solid #fff;
   position: absolute;
-  bottom: -20px;
+  bottom: -18px;
   left: 20px;
 }
 footer {
@@ -279,9 +277,83 @@ footer .foot {
   }
 }
 @media screen and (max-width: 767px) {
+  main h2 {
+    text-align: center;
+  }
+  main .map__contact {
+    position: static;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  main .map__guide {
+    display: none;
+  }
   main form textarea {
     margin-bottom: 50px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 298px;
+  }
+  main form input[type="submit"] {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main .inputs input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 520px) {
+  main {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  main .map__contact {
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .map__tel {
+    order: 0;
+  }
+  main .map__email {
+    order: 2;
+  }
+  main .map__hours {
+    order: 1;
+  }
+}
+@media screen and (max-width: 390px) {
+  main .map__contact {
+    flex-direction: column;
+  }
+  main .map__tel,
+  main .map__email,
+  main .map__hours {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main .map__email {
+    order: 1;
+  }
+}
+@media screen and (max-width: 350px) {
+  main form {
+    padding-left: 0;
+  }
+  main form textarea,
+  main form input[type="submit"] {
+    width: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  main .inputs input[type="text"],
+  main .inputs input[type="email"] {
+    width: auto;
   }
 }
