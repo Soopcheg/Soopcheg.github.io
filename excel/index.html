@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        th,
+        td {
+            font-size: 15px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #979;
+            padding: 2px 3px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        #download {
+            display: block;
+            border-radius: 34px;
+            background-color: #f2e813;
+            box-shadow: 0px 5px 0px 0px #e9a502, 0px 12px 8.73px 0.27px rgba(0, 0, 0, 0.28);
+            width: 282px;
+            height: 72px;
+            color: black;
+            text-align: center;
+            line-height: 72px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+
+        .response-hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdn.rawgit.com/rainabba/jquery-table2excel/1.1.0/dist/jquery.table2excel.min.js"></script>
+    <div class="response-hidden"></div>
+    <table id="tableId">
+        <tr>
+            <th>кадастр</th>
+            <th>адрес</th>
+        </tr>
+    </table>
+    <a href="#" id="download" target="_blank">Загрузить таблицу</a>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./jquery.table2excel.min.js"></script>
+    <script src="./sccript.js"></script>
+</body>
+
+</html>
