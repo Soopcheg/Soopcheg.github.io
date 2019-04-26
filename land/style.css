@@ -40,6 +40,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Bebas Neue";
+  width: 735px;
 }
 h2 {
   color: #000000;
@@ -132,7 +133,8 @@ header a {
   height: 505px;
   position: absolute;
   top: -49px;
-  left: 182px;
+  left: 9.5%;
+  z-index: -1;
 }
 .whatis::after {
   content: "";
@@ -141,8 +143,9 @@ header a {
   width: 1214px;
   height: 544px;
   position: absolute;
-  right: 20px;
+  right: 1%;
   top: 3px;
+  z-index: -1;
 }
 .whatis__list {
   margin-top: 9px;
@@ -193,7 +196,8 @@ header a {
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 71px;
-  padding-left: 58px;
+  padding-left: 4.1%;
+  padding-top: 5.1%;
 }
 .howwork__step-one h5,
 .howwork__step-two h5,
@@ -228,7 +232,8 @@ header a {
   height: 460px;
   position: absolute;
   bottom: 0;
-  right: 121px;
+  right: 6.3%;
+  z-index: -1;
 }
 .uselanding .headline {
   letter-spacing: -0.3px;
@@ -248,7 +253,7 @@ header a {
   margin-bottom: 10px;
 }
 .requests {
-  background: url("images/плашка.png");
+  background: url("images/плашка1.png");
   background-size: cover;
   padding-bottom: 10px;
 }
@@ -274,6 +279,8 @@ header a {
   margin-left: 109px;
   background-image: linear-gradient(to top, #4e8afc 0%, #4aacff 100%);
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #1978ca;
   font-family: "OpenSansCondensed";
   font-size: 84px;
@@ -295,7 +302,7 @@ header a {
   height: 372px;
   position: absolute;
   bottom: 38px;
-  right: 171px;
+  right: 8.9%;
 }
 .stage {
   display: flex;
@@ -439,8 +446,9 @@ footer::after {
   width: 415px;
   height: 376px;
   position: absolute;
-  right: 310px;
+  right: 16.15%;
   bottom: -25px;
+  z-index: -1;
 }
 footer ul {
   margin-top: 50px;
@@ -474,73 +482,51 @@ footer .call {
   font-weight: 700;
   line-height: 56px;
 }
-input[type="range"] {
-  margin: auto;
-  -webkit-appearance: none;
-  position: relative;
-  overflow: hidden;
-  height: 5px;
-  cursor: pointer;
-  border-radius: 0;
-  /* iOS */
+@media screen and (min-width: 1850px) {
+  .col-xxl-5 {
+    flex: 0 0 41, 6666667%;
+    max-width: 41, 6666667%;
+  }
+  .col-xxl-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-xxl-7 {
+    flex: 0 0 58, 3333333%;
+    max-width: 58, 3333333%;
+  }
+  .col-xxl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
 }
-::-webkit-slider-runnable-track {
-  background: #ddd;
+@media screen and (min-width: 1660) {
+  .offset-xxl-2 {
+    margin-left: 16.666667%;
+  }
+  .offset-xxl-4 {
+    margin-left: 33.333333%;
+  }
+  .col-mxl-10 {
+    flex: 0 0 83, 3333333%;
+    max-width: 83, 3333333%;
+  }
 }
-/*
- * 1. Set to 0 width and remove border for a slider without a thumb
- */
-::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 14px;
-  /* 1 */
-  height: 14px;
-  background: #4e8afc;
-  box-shadow: -100vw 0 0 100vw #4e8afc;
-  border: none;
+@media screen and (max-width: 1340) {
+  .whatis::before {
+    display: none;
+  }
+  .uselanding::after {
+    display: none;
+  }
+  .stages::after {
+    display: none;
+  }
+  footer::after {
+    display: none;
+  }
 }
-::-moz-range-track {
-  height: 40px;
-  background: #ddd;
-}
-::-moz-range-thumb {
-  border-radius: 0 !important;
-  -webkit-appearance: none;
-  width: 14px;
-  /* 1 */
-  height: 14px;
-  background: #4e8afc;
-  box-shadow: -100vw 0 0 100vw #4e8afc;
-  border: none;
-}
-::-ms-fill-lower {
-  background: #4e8afc;
-}
-::-ms-thumb {
-  -webkit-appearance: none;
-  width: 14px;
-  /* 1 */
-  height: 14px;
-  background: #4e8afc;
-  box-shadow: -100vw 0 0 100vw #4e8afc;
-  border: none;
-}
-::-ms-ticks-after {
-  display: none;
-}
-::-ms-ticks-before {
-  display: none;
-}
-::-ms-track {
-  background: #ddd;
-  color: transparent;
-  height: 40px;
-  border: none;
-}
-::-ms-tooltip {
-  display: none;
-}
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1201px) {
   body {
     overflow-x: hidden;
   }
