@@ -1,0 +1,550 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("bebasneue/BebasNeueBold.otf");
+  src: url('bebasneue/BebasNeueBold.otf') format("opentype"), url('bebasneue/BebasNeueBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('Open_Sans/OpenSans-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('Open_Sans/OpenSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondensed';
+  src: url('Open_Sans_Condensed/OpenSansCondensed-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 20px;
+}
+li {
+  list-style: none;
+}
+h1 {
+  margin-top: 28px;
+  color: #000000;
+  font-size: 53px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+h2 {
+  color: #000000;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Bebas Neue";
+}
+a {
+  text-decoration: none;
+  text-align: center;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.headline {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32.18px;
+  margin-bottom: 0;
+}
+.headline span {
+  color: #4e8afc;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+header {
+  background: url(images/фон_верх.png);
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 115px;
+}
+header ul {
+  margin-bottom: 40px;
+}
+header li {
+  margin-top: 12px;
+  margin-bottom: 3px;
+  display: flex;
+}
+header li::before {
+  content: "";
+  display: block;
+  background: url('images/безнаведения.png');
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+header li:hover::before {
+  background: url('images/1_при_наведении.png');
+}
+header li span {
+  color: #32325d;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+header li .lightblue {
+  color: #20b3ff;
+}
+header a {
+  display: block;
+  width: 334px;
+  height: 56px;
+  box-shadow: -7px 7px 20px rgba(0, 65, 187, 0.2);
+  border-radius: 3px;
+  background-color: #4e8afc;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 52.57px;
+}
+.whatis {
+  margin-top: 107px;
+  position: relative;
+  padding-bottom: 152px;
+  margin-left: -21px;
+}
+.whatis::before {
+  content: "";
+  display: block;
+  background: url(images/иллюстрация_слева.png);
+  width: 376px;
+  height: 505px;
+  position: absolute;
+  top: -49px;
+  left: 182px;
+}
+.whatis::after {
+  content: "";
+  display: block;
+  background: url(images/фон_вопрос.png);
+  width: 1214px;
+  height: 544px;
+  position: absolute;
+  right: 20px;
+  top: 3px;
+}
+.whatis__list {
+  margin-top: 9px;
+  margin-right: 65px;
+}
+.whatis__list li {
+  margin-top: 20px;
+}
+.whatis__list span {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.howwork {
+  background: url(images/фон.png);
+  background-size: cover;
+  padding-top: 68px;
+  padding-bottom: 33px;
+}
+.howwork .headline {
+  margin-top: -5px;
+  margin-bottom: 57px;
+}
+.howwork__step-one {
+  background: url(images/1_плашка.png);
+  margin-left: -34px;
+}
+.howwork__step-two {
+  background: url(images/2_плашка.png);
+  margin-top: 39px;
+  margin-left: 5px;
+}
+.howwork__step-three {
+  background: url(images/3_плашка.png);
+}
+.howwork__step-four {
+  background: url(images/4_плашка.png);
+  margin-top: 40px;
+}
+.howwork__step-one,
+.howwork__step-two,
+.howwork__step-three,
+.howwork__step-four {
+  width: 370px;
+  height: 265px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 71px;
+  padding-left: 58px;
+}
+.howwork__step-one h5,
+.howwork__step-two h5,
+.howwork__step-three h5,
+.howwork__step-four h5 {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 29.18px;
+}
+.howwork__step-one p,
+.howwork__step-two p,
+.howwork__step-three p,
+.howwork__step-four p {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.39px;
+}
+.uselanding {
+  padding-top: 75px;
+  padding-bottom: 60px;
+  position: relative;
+}
+.uselanding::after {
+  content: "";
+  background-image: url(images/диаграммы.png);
+  display: block;
+  width: 594px;
+  height: 460px;
+  position: absolute;
+  bottom: 0;
+  right: 121px;
+}
+.uselanding .headline {
+  letter-spacing: -0.3px;
+}
+.uselanding h5 {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 32.18px;
+  margin-top: 42px;
+}
+.uselanding h5:first-child {
+  margin-top: 57px;
+}
+.uselanding input[type="range"] {
+  margin-bottom: 10px;
+}
+.requests {
+  background: url("images/плашка.png");
+  background-size: cover;
+  padding-bottom: 10px;
+}
+.requests__range {
+  margin-top: 36px;
+}
+.requests__range span {
+  color: #000000;
+  font-family: "OpenSans";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32.18px;
+}
+.requests__top {
+  margin-right: 257px;
+}
+.requests__bottom {
+  margin-right: 69px;
+}
+.requests__dif {
+  margin-top: 11px;
+  margin-bottom: 10px;
+  margin-left: 109px;
+  background-image: linear-gradient(to top, #4e8afc 0%, #4aacff 100%);
+  background-clip: text;
+  color: #1978ca;
+  font-family: "OpenSansCondensed";
+  font-size: 84px;
+  font-weight: 700;
+}
+.stages {
+  padding-top: 90px;
+  padding-bottom: 10px;
+  position: relative;
+}
+.stages h2 {
+  margin-bottom: 83px;
+}
+.stages::after {
+  content: "";
+  display: block;
+  background-image: url(images/иллюстрация_справа.png);
+  width: 459px;
+  height: 372px;
+  position: absolute;
+  bottom: 38px;
+  right: 171px;
+}
+.stage {
+  display: flex;
+  margin-bottom: 43px;
+  margin-right: 83px;
+}
+.stage:first-child {
+  margin-right: 93px;
+}
+.stage img {
+  width: 74px;
+  height: 74px;
+}
+.stage__desc {
+  margin-top: -5px;
+  margin-left: 34px;
+}
+.stage__desc h5 {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.stage__desc p {
+  color: #32325d;
+  font-family: "OpenSans";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.speed {
+  box-shadow: 1px 4px 49px rgba(14, 57, 139, 0.1);
+  background-color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 27px;
+}
+.speed img {
+  width: 111px;
+  height: 67px;
+  margin-right: 35px;
+}
+.speed p {
+  color: #000000;
+  font-family: "Open Sans";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30.18px;
+  margin-bottom: 0;
+}
+.speed a {
+  margin-left: 60px;
+  margin-top: 5px;
+  width: 370px;
+  height: 56px;
+  border-radius: 3px;
+  background-color: #4e8afc;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+}
+.price {
+  position: relative;
+  padding-top: 90px;
+}
+.price .headline {
+  margin-top: 25px;
+}
+.price::before {
+  content: "";
+  display: block;
+  background-image: url(images/фон_слева.png);
+  width: 328px;
+  height: 1086px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.price::after {
+  content: "";
+  display: block;
+  background-image: url(images/фон_справа.png);
+  width: 767px;
+  height: 1202px;
+  position: absolute;
+  top: -30px;
+  right: 0;
+  z-index: -1;
+}
+.price__solution {
+  color: #32325d;
+  font-family: "Open Sans";
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.price__bot {
+  margin-top: 30px;
+}
+.price__bot img {
+  height: 218px;
+  width: 161px;
+}
+.price__desc {
+  background-color: #3c69b9;
+  width: 485px;
+  height: 89px;
+  box-shadow: 1px 3px 9px 1px rgba(0, 0, 0, 0.23);
+  margin-top: 20px;
+  margin-left: 35px;
+  position: relative;
+  color: #ffffff;
+  font-family: "OpenSans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25.18px;
+  padding-left: 25px;
+}
+.price__desc span {
+  padding-top: 25px;
+  display: block;
+}
+.price__desc::before {
+  content: "";
+  border: 12px solid transparent;
+  border-top: 12px solid #3c69b9;
+  border-right: 12px solid #3c69b9;
+  position: absolute;
+  left: -23px;
+}
+footer {
+  padding-top: 155px;
+  position: relative;
+}
+footer::after {
+  content: "";
+  display: block;
+  background-image: url(images/каталог.png);
+  width: 415px;
+  height: 376px;
+  position: absolute;
+  right: 310px;
+  bottom: -25px;
+}
+footer ul {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+footer li {
+  display: flex;
+  color: #000000;
+  font-family: "OpenSans";
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 40px;
+}
+footer li:last-child {
+  margin-right: 0;
+}
+footer li img {
+  width: 28px;
+  height: 28px;
+}
+footer .call {
+  display: block;
+  width: 327px;
+  height: 56px;
+  box-shadow: -7px 7px 20px rgba(0, 65, 187, 0.2);
+  border-radius: 3px;
+  background-color: #4e8afc;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+}
+input[type="range"] {
+  margin: auto;
+  -webkit-appearance: none;
+  position: relative;
+  overflow: hidden;
+  height: 5px;
+  cursor: pointer;
+  border-radius: 0;
+  /* iOS */
+}
+::-webkit-slider-runnable-track {
+  background: #ddd;
+}
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  /* 1 */
+  height: 14px;
+  background: #4e8afc;
+  box-shadow: -100vw 0 0 100vw #4e8afc;
+  border: none;
+}
+::-moz-range-track {
+  height: 40px;
+  background: #ddd;
+}
+::-moz-range-thumb {
+  border-radius: 0 !important;
+  -webkit-appearance: none;
+  width: 14px;
+  /* 1 */
+  height: 14px;
+  background: #4e8afc;
+  box-shadow: -100vw 0 0 100vw #4e8afc;
+  border: none;
+}
+::-ms-fill-lower {
+  background: #4e8afc;
+}
+::-ms-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  /* 1 */
+  height: 14px;
+  background: #4e8afc;
+  box-shadow: -100vw 0 0 100vw #4e8afc;
+  border: none;
+}
+::-ms-ticks-after {
+  display: none;
+}
+::-ms-ticks-before {
+  display: none;
+}
+::-ms-track {
+  background: #ddd;
+  color: transparent;
+  height: 40px;
+  border: none;
+}
+::-ms-tooltip {
+  display: none;
+}
+@media screen and (min-width: 1340px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1920px;
+  }
+}

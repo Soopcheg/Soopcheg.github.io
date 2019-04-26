@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./contact_style.css">
+    <title>Наши контакты</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-between px-3">
+                <img src="./images/logo.png" alt="ПЕРЕЕЗД.COM" class="logo-top">
+                <nav>
+                    <ul class="d-flex navigation">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Клиентам</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Автопарк</a></li>
+                    </ul>
+                </nav>
+                <address class="contact">
+                    <a href="tel:+7(999)777-99-77" class="contact__tel">+7-999-777-99--77</a>
+                    <a href="mailto:mail@example.com" target="_blank" class="contact__email">mail@example.com</a>
+                </address>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">ПЕРЕЕЗД.COM</h1>
+        <div class="container">
+            <div class="row">
+                <section class="col-xl-9 col-12 order-xl-0 order-1 contacts">
+                    <h2>Наши контакы</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.289560103806!2d37.63403431625677!3d55.753471980553506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzEyLjUiTiAzN8KwMzgnMTAuNCJF!5e0!3m2!1sru!2sru!4v1552734333442"
+                            width="914" height="566" frameborder="0" style="border:0" class="map-google"
+                            allowfullscreen></iframe>
+                        <address class="map__contact">
+                            <div class="map__tel">
+                                <h3>Телефон</h3>
+                                <p>+7-999-999-99-99</p>
+                            </div>
+                            <div class="map__email">
+                                <h3>Почта</h3>
+                                <p>maill@gmail.com</p>
+                            </div>
+                            <div class="map__hours">
+                                <h3>Часы работы</h3>
+                                <p>пн-пт: 8.00 - 21:00</p>
+                                <p>сб-вс: 10.00 - 16.00</p>
+                            </div>
+                        </address>
+                        <address class="map__guide">
+                            <img src="./images/logo-min.png" alt="ПЕРЕЕЗД.COM">
+                            <p>г.Москва, ул. Ленина, д63, офис 2</p>
+                        </address>
+                    </div>
+                </section>
+                <section class="col-xl-3 col-12 order-xl-1 order-0 application">
+                    <h2>Оставьте заявку</h2>
+                    <form action="" class="d-md-block d-flex flex-column">
+                        <div class="inputs">
+                            <input type="text" name="name" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Имя">
+                            <input type="text" name="surname" pattern="([а-яёa-z]{2,}[\-\s]?)" placeholder="Фамилия">
+                            <input type="text" name="phone" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
+                                placeholder="Телефон">
+                            <input type="email" name="email" placeholder="Почта">
+                        </div>
+                        <textarea name="" placeholder="Комментарий"></textarea>
+                        <input type="submit" value="Отправить заявку">
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between px-3">
+                <img src="./images/logo-bottom.png" alt="ПЕРЕЕЗД.COM" class="logo-bottom">
+                <ul class="d-flex justify-content-between navigation">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Клиентам</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Автопарк</a></li>
+                </ul>
+                <address class="contact">
+                    <a href="tel:+7(999)777-99-77" class="contact__tel">+7-999-777-99--77</a>
+                    <a href="mailto:mail@example.com" target="_blank" class="contact__email">mail@example.com</a>
+                </address>
+            </div>
+            <div class="row">
+                <div class="col foot">&copy; Copyright 2019</div>
+                <div class="col made foot">made by ArtProduction</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
