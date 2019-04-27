@@ -36,7 +36,7 @@ li {
 h1 {
   margin-top: 28px;
   color: #000000;
-  font-size: 53px;
+  font-size: 2.65rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Bebas Neue";
@@ -44,7 +44,7 @@ h1 {
 }
 h2 {
   color: #000000;
-  font-size: 50px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Bebas Neue";
@@ -60,9 +60,9 @@ a:hover {
 .headline {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 32.18px;
+  line-height: 1.6rem;
   margin-bottom: 0;
 }
 .headline span {
@@ -99,7 +99,7 @@ header li:hover::before {
 header li span {
   color: #32325d;
   font-family: "Open Sans";
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-top: -5px;
 }
@@ -157,7 +157,7 @@ header a {
 .whatis__list span {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 17px;
+  font-size: 0.85rem;
   font-weight: 400;
   margin-left: 20px;
 }
@@ -205,9 +205,9 @@ header a {
 .howwork__step-four h5 {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: 600;
-  line-height: 29.18px;
+  line-height: 1.45rem;
 }
 .howwork__step-one p,
 .howwork__step-two p,
@@ -215,9 +215,9 @@ header a {
 .howwork__step-four p {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 16px;
+  font-size: 0.8rem;
   font-weight: 400;
-  line-height: 19.39px;
+  line-height: 0.97rem;
 }
 .uselanding {
   padding-top: 75px;
@@ -241,9 +241,9 @@ header a {
 .uselanding h5 {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 16px;
+  font-size: 0.8rem;
   font-weight: 700;
-  line-height: 32.18px;
+  line-height: 1.6rem;
   margin-top: 42px;
 }
 .uselanding h5:first-child {
@@ -263,9 +263,9 @@ header a {
 .requests__range span {
   color: #000000;
   font-family: "OpenSans";
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 600;
-  line-height: 32.18px;
+  line-height: 1.6rem;
 }
 .requests__top {
   margin-right: 257px;
@@ -283,7 +283,7 @@ header a {
   -webkit-text-fill-color: transparent;
   color: #1978ca;
   font-family: "OpenSansCondensed";
-  font-size: 84px;
+  font-size: 4.2rem;
   font-weight: 700;
 }
 .stages {
@@ -323,16 +323,16 @@ header a {
 .stage__desc h5 {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 19px;
+  font-size: 0.95rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.4rem;
 }
 .stage__desc p {
   color: #32325d;
   font-family: "OpenSans";
-  font-size: 17px;
+  font-size: 0.85rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1rem;
 }
 .speed {
   box-shadow: 1px 4px 49px rgba(14, 57, 139, 0.1);
@@ -348,9 +348,9 @@ header a {
 .speed p {
   color: #000000;
   font-family: "Open Sans";
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 700;
-  line-height: 30.18px;
+  line-height: 1.5rem;
   margin-bottom: 0;
 }
 .speed a {
@@ -397,7 +397,7 @@ header a {
 .price__solution {
   color: #32325d;
   font-family: "Open Sans";
-  font-size: 29px;
+  font-size: 1.45rem;
   font-weight: 400;
   margin-top: 25px;
 }
@@ -418,9 +418,9 @@ header a {
   position: relative;
   color: #ffffff;
   font-family: "OpenSans";
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 25.18px;
+  line-height: 1.26rem;
   padding-left: 25px;
 }
 .price__desc span {
@@ -458,7 +458,7 @@ footer li {
   display: flex;
   color: #000000;
   font-family: "OpenSans";
-  font-size: 22px;
+  font-size: 1.1rem;
   font-weight: 600;
   margin-right: 40px;
 }
@@ -500,7 +500,7 @@ footer .call {
     max-width: 75%;
   }
 }
-@media screen and (min-width: 1660) {
+@media screen and (min-width: 1660px) {
   .offset-xxl-2 {
     margin-left: 16.666667%;
   }
@@ -512,7 +512,31 @@ footer .call {
     max-width: 83, 3333333%;
   }
 }
-@media screen and (max-width: 1340) {
+@media screen and (min-width: 1350px) {
+  .offset-mxl-3 {
+    margin-left: 25%;
+  }
+  .offset-mxl-1 {
+    margin-left: 8, 3333333%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    max-width: 1920px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 17px;
+  }
   .whatis::before {
     display: none;
   }
@@ -526,11 +550,16 @@ footer .call {
     display: none;
   }
 }
-@media screen and (min-width: 1201px) {
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 16px;
   }
-  .container {
-    max-width: 1920px;
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 15px;
+  }
+  .requests__top {
+    margin-right: 230px;
   }
 }
