@@ -30,7 +30,7 @@ $('#click').ionRangeSlider({
 var width=screen.width;
 
 if (width<=768){
-    $(".call").attr("href", "https://api.whatsapp.com/send?phone=745333355566")
+    $("footer .call").attr("href", "https://api.whatsapp.com/send?phone=745333355566")
 }
 
 // console.log(width);
