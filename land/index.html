@@ -131,18 +131,17 @@
         <section class="uselanding">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-2 offset-1">
+                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-2 offset-1 padr">
                         <h2>Ты все еще используешь лэндинг?</h2>
                         <p class="headline">Тогда давай посчитаем, сколько клиентов ты теряешь каждый день!</p>
-                        <h5>Ваша текущая конверсия</h5>
-                        <!-- <input type="range" min="0" max="30" step="5" value="3"> -->
-                        <input type="text" id="convers" name="slider" value="">
-                        <h5>Ваш рекламный бюджет</h5>
-                        <!-- <input type="range" min="0" max="100000" step="20000" value="60000"> -->
-                        <input type="text" id="budget" name="slider" value="">
-                        <h5>Средняя стоимость клика</h5>
-                        <!-- <input type="range" min="0" max="500" step="100" value="10"> -->
-                        <input type="text" id="click" name="slider" value="">
+                        <form action="">
+                            <h5>Ваша текущая конверсия</h5>
+                            <input type="text" id="convers" name="slider" value="">
+                            <h5>Ваш рекламный бюджет</h5>
+                            <input type="text" id="budget" name="slider" value="">
+                            <h5>Средняя стоимость клика</h5>
+                            <input type="text" id="click" name="slider" value="">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -154,11 +153,11 @@
                         <div class="requests__range">
                             <div class="d-flex  mb-2">
                                 <span class="requests__top">Сейчас у вас заявок</span>
-                                <span>100</span>
+                                <span id="requests__now">100</span>
                             </div>
                             <div class="d-flex  mt-4">
                                 <span class="requests__bottom">Внедрив чат-бота, у вас будет заявок</span>
-                                <span>1000</span>
+                                <span id="requests__withbot">1000</span>
                             </div>
                         </div>
                         <p class="requests__dif">900 заявок</p>

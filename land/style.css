@@ -30,6 +30,9 @@
 html {
   font-size: 20px;
 }
+body {
+  overflow-x: hidden;
+}
 li {
   list-style: none;
 }
@@ -268,7 +271,7 @@ header a {
   line-height: 1.6rem;
 }
 .requests__top {
-  margin-right: 257px;
+  margin-right: 270px;
 }
 .requests__bottom {
   margin-right: 69px;
@@ -698,6 +701,9 @@ footer .call {
   .howwork__step-three,
   .howwork__step-four {
     padding-top: 18%;
+  }
+  .padr {
+    padding-right: 30px;
   }
 }
 @media screen and (max-width: 540px) {
