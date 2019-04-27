@@ -15,7 +15,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-0">
+                <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-0 offset-1">
                     <img src="./images/лого.png" alt="NEUROBOT" class="logo">
                     <h1>Экономь рекламный бюджет до 10 раз
                         с помощью тренда 2019 года –
@@ -35,7 +35,7 @@
         <section class="whatis">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-7 offset-xxl-4 offset-mxl-3 offset-lg-2">
+                    <div class="col-xxl-7 offset-xxl-4 offset-mxl-3 offset-lg-2 offset-1">
                         <h2>ЧТО ТАКОЕ WHATSAPP-ЛЭНДИНГ NEUROBOT?</h2>
                         <p class="headline">Альтернатива сайту или лендингу с удобной навигацией <br>
                             в привычном интерфейсе WhatsApp</p>
@@ -95,7 +95,8 @@
         <section class="howwork">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-9 col-mxl-10 col-xl-11 offset-xxl-2 offset-lg-1">
+                    <div
+                        class="col-xxl-9 col-mxl-10 col-xl-11 col-lg-11 col-md-6 col-10 offset-xxl-2 offset-lg-1 offset-sm-2 offset-1 marl-0">
                         <h2>КАК ЭТО РАБОТАЕТ?</h2>
                         <p class="headline">Моментальный отклик клиенту</p>
                         <div class="d-lg-flex">
@@ -130,7 +131,7 @@
         <section class="uselanding">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-2">
+                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-2 offset-1">
                         <h2>Ты все еще используешь лэндинг?</h2>
                         <p class="headline">Тогда давай посчитаем, сколько клиентов ты теряешь каждый день!</p>
                         <h5>Ваша текущая конверсия</h5>
@@ -149,7 +150,7 @@
         <section class="requests">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-7 offset-xxl-2 offset-xl-2 d-flex">
+                    <div class="col-xxl-7 offset-xxl-2 offset-xl-2 offset-sm-1 d-flex">
                         <div class="requests__range">
                             <div class="d-flex  mb-2">
                                 <span class="requests__top">Сейчас у вас заявок</span>
@@ -168,7 +169,8 @@
         <section class="stages">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-6 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-1 col-xl-9">
+                    <div
+                        class="col-xxl-6 col-xl-9 col-lg-11 col-md-8 col-sm-10 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-1 offset-1">
                         <h2>ЭТАПЫ СОЗДАНИЯ И ЗАПУСКА ЧАТ-БОТ</h2>
                         <div class="d-flex flex-wrap">
                             <div class="stage order-lg-0 order-0">
@@ -216,7 +218,8 @@
         <section class="speed">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-7 d-flex offset-xxl-2 offset-xl-2 offset-lg-1">
+                    <div
+                        class="col-xxl-7 col-md-12 col-10 d-flex offset-xxl-2 offset-xl-2 offset-lg-1 offset-1 flex-md-nowrap flex-wrap">
                         <img src="./images/icon-speed-.png" alt="">
                         <p>Уже через три дня ваш бот будет <br>
                             полностью готов к работе!</p>
@@ -228,7 +231,7 @@
         <section class="price">
             <div class="container">
                 <div class="row">
-                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-1">
+                    <div class="col-xxl-5 offset-xxl-2 offset-mxl-1 offset-xl-2 offset-lg-1 offset-1">
                         <h2>СТОИМОСТЬ РАЗРАБОТКИ ЧАТ-БОТ</h2>
                         <p class="headline">Разработка бота под ключ составляет всего <span>10000 рублей </span> <br>
                             + абонентская плата (6.000 рублей/мес)</p>
@@ -254,11 +257,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-xxl-6 offset-xxl-2 offset-xl-1 offset-xl-2 offset-lg-1">
+                <div class="col-xxl-6 offset-xxl-2 offset-xl-1 offset-xl-2 offset-lg-1 offset-1">
                     <h2>Ты всё ещё думаешь?</h2>
                     <p class="headline uppercase">Оставь свой телефон, и мы пришлём полную <br>
                         презентацию <span>прямо вам в whatsapp</span></p>
-                    <ul class="d-flex">
+                    <ul class="d-flex flex-md-row flex-column">
                         <li>
                             <img src="./images/call.png" alt="">
                             <p>+7 (453) 333 555 66</p>
@@ -276,7 +279,10 @@
                             <p>@email.com</p>
                         </li>
                     </ul>
-                    <a href="" class="call">Заказать звонок</a>
+                    <div class="d-flex">
+                        <input type="tel" name="tel" id="tel" pattern="7[0-9]{10}" placeholder="Ваш телефон">
+                        <a href="" class="call">Заказать звонок</a>
+                    </div>
                 </div>
             </div>
         </div>

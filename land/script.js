@@ -6,6 +6,7 @@ $('#convers').ionRangeSlider({
     from: 3, // предустановленное значение ОТ
     type: "single", // тип слайдера
     step: 5, // шаг слайдера
+    skin: "round"
 });
 
 $('#budget').ionRangeSlider({
@@ -14,6 +15,7 @@ $('#budget').ionRangeSlider({
     from: 60000, // предустановленное значение ОТ
     type: "single", // тип слайдера
     step: 20000, // шаг слайдера
+    skin: "round"
 });
 
 $('#click').ionRangeSlider({
@@ -22,4 +24,13 @@ $('#click').ionRangeSlider({
     from: 10, // предустановленное значение ОТ
     type: "single", // тип слайдера
     step: 100, // шаг слайдера
+    skin: "round"
 });
+
+var width=screen.width;
+
+if (width<=768){
+    $(".call").attr("href", "https://api.whatsapp.com/send?phone=745333355566")
+}
+
+// console.log(width);

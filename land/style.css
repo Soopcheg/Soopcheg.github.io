@@ -253,8 +253,8 @@ header a {
   margin-bottom: 10px;
 }
 .requests {
-  background: url("images/плашка1.png");
-  background-size: cover;
+  background: url("images/плашка.png");
+  background-size: auto;
   padding-bottom: 10px;
 }
 .requests__range {
@@ -285,6 +285,18 @@ header a {
   font-family: "OpenSansCondensed";
   font-size: 4.2rem;
   font-weight: 700;
+  position: relative;
+}
+.requests__dif::before {
+  display: block;
+  content: "";
+  height: 7.44rem;
+  width: 37px;
+  background-image: url(images/arrow.png);
+  position: absolute;
+  top: -2%;
+  left: -20%;
+  background-size: contain;
 }
 .stages {
   padding-top: 90px;
@@ -469,6 +481,14 @@ footer li img {
   width: 28px;
   height: 28px;
 }
+footer input {
+  width: 327px;
+  border-radius: 3px;
+  border: 1px solid grey;
+  height: 56px;
+  margin-right: 10px;
+  padding: 0 10px 0 10px;
+}
 footer .call {
   display: block;
   width: 327px;
@@ -505,7 +525,7 @@ footer .call {
     margin-left: 16.666667%;
   }
   .offset-xxl-4 {
-    margin-left: 33.333333%;
+    margin-left: 33.333333% !important;
   }
   .col-mxl-10 {
     flex: 0 0 83, 3333333%;
@@ -537,6 +557,12 @@ footer .call {
   html {
     font-size: 17px;
   }
+  .requests__top {
+    margin-right: 240px;
+  }
+  .requests__dif::before {
+    width: 33px;
+  }
   .whatis::before {
     display: none;
   }
@@ -554,6 +580,13 @@ footer .call {
   html {
     font-size: 16px;
   }
+  .requests__top {
+    margin-right: 220px;
+  }
+  .requests__dif::before {
+    width: 30px;
+    height: 7.7rem;
+  }
 }
 @media screen and (max-width: 1280px) {
   html {
@@ -561,5 +594,254 @@ footer .call {
   }
   .requests__top {
     margin-right: 230px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .howwork__step-one,
+  .howwork__step-two,
+  .howwork__step-three,
+  .howwork__step-four {
+    margin-left: 0;
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-right: 12%;
+  }
+  .howwork__step-one h5,
+  .howwork__step-two h5,
+  .howwork__step-three h5,
+  .howwork__step-four h5 {
+    font-size: 1.5rem;
+  }
+  .howwork__step-one p,
+  .howwork__step-two p,
+  .howwork__step-three p,
+  .howwork__step-four p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .speed a {
+    width: 350px;
+    font-size: 17px;
+  }
+  .requests__top {
+    margin-right: 165px;
+  }
+  .requests__bottom {
+    margin-right: 15px;
+  }
+  .requests__dif {
+    font-size: 3rem;
+    margin-top: 36px;
+    margin-left: 80px;
+  }
+  .requests__dif::before {
+    top: -42%;
+    left: -20%;
+    height: 7.6rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  header {
+    background-image: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    width: auto;
+  }
+  .price__desc {
+    width: 350px;
+  }
+  .requests__range span {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .requests__top {
+    margin-right: 131px;
+  }
+  .requests__dif {
+    font-size: 2rem;
+  }
+  .requests__dif::before {
+    top: -65%;
+    left: -35%;
+    height: 6.5rem;
+    width: 25px;
+  }
+  .speed a {
+    margin-top: 10px;
+    width: 270px;
+    font-size: 15px;
+  }
+  footer li {
+    margin-bottom: 10px;
+  }
+  footer li p {
+    margin-left: 10px;
+  }
+  footer input {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .price__desc {
+    width: 310px;
+  }
+  .price__bot img {
+    display: none;
+  }
+  .howwork__step-one,
+  .howwork__step-two,
+  .howwork__step-three,
+  .howwork__step-four {
+    padding-top: 18%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .speed img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .speed p {
+    width: 274px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  footer {
+    padding-bottom: 30px;
+  }
+  footer input {
+    width: 290px;
+  }
+  footer .call {
+    font-size: 16px;
+    width: 290px;
+  }
+  .price::after {
+    display: none;
+  }
+  .price::before {
+    display: none;
+  }
+  .stage {
+    margin-right: 0;
+  }
+  .stage:first-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 531px) {
+  .requests__top {
+    margin-right: 105px;
+  }
+  .requests__range span {
+    font-size: 0.71rem;
+  }
+  .requests__range {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 12px;
+  }
+  .speed a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .howwork__step-one,
+  .howwork__step-two,
+  .howwork__step-three,
+  .howwork__step-four {
+    padding-top: 20%;
+  }
+  .howwork__step-one p,
+  .howwork__step-two p,
+  .howwork__step-three p,
+  .howwork__step-four p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .howwork__step-one h5,
+  .howwork__step-two h5,
+  .howwork__step-three h5,
+  .howwork__step-four h5 {
+    font-size: 1.8rem;
+  }
+  .requests__top {
+    margin-right: 94px;
+  }
+  .requests__dif::before {
+    top: -76%;
+    height: 6.9rem;
+    width: 20px;
+  }
+  .marl-0 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 416px) {
+  .requests__range {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 392px) {
+  .requests__range {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 383px) {
+  .requests__top {
+    margin-right: 87px;
+  }
+  .requests__range {
+    margin-left: 5px;
+  }
+  .requests__range span {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 373px) {
+  html {
+    font-size: 10px;
+  }
+  header a {
+    width: 285px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 45px;
+  }
+  .price__desc {
+    width: 270px;
+  }
+  .howwork__step-one,
+  .howwork__step-two,
+  .howwork__step-three,
+  .howwork__step-four {
+    width: 100%;
+    padding-top: 22%;
+    padding-left: 17%;
+  }
+  .howwork__step-one h5,
+  .howwork__step-two h5,
+  .howwork__step-three h5,
+  .howwork__step-four h5 {
+    font-size: 1.5rem;
+  }
+  .howwork__step-one p,
+  .howwork__step-two p,
+  .howwork__step-three p,
+  .howwork__step-four p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .requests__range {
+    margin-top: 29px;
+  }
+  .requests__top {
+    margin-right: 76px;
   }
 }
