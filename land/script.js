@@ -42,25 +42,29 @@ var convers,
 
 var values = $(".uselanding form .irs-single");
 
-window.onload = function () {
+function showRequests() {
+    convers = parseFloat(values["0"].innerText);
+    budget = parseFloat(values["1"].innerText) * 1000;
+    click = parseFloat(values["2"].innerText);
+    now = budget / click * convers / 100;
+    withbot = budget / click * convers / 10;
+    dif = withbot - now;
+    $("#requests__now").text(now);
+    $("#requests__withbot").text(withbot);
+    $(".requests__dif").text(dif + " заявок");
+}
+
+showRequests();
+
+window.onload = function () {    
     $(".uselanding form").change(function (e) {
-        convers = parseFloat(values["0"].innerText);
-        budget = parseFloat(values["1"].innerText) * 1000;
-        click = parseFloat(values["2"].innerText);
-        now = budget / click * convers / 100;
-        withbot = budget / click * convers / 10;
-        dif = withbot - now;
-        $("#requests__now").text(now);
-        $("#requests__withbot").text(withbot);
-        $(".requests__dif").text(dif + "заявок");
-        console.log(budget + " " + convers + " " + click)
-        console.log(now + " " + withbot + " " + dif)
+        showRequests();
     });
 
     var width = screen.width;
 
-        if (width <= 768) {
-            $("footer .call").attr("href", "https://api.whatsapp.com/send?phone=745333355566")
-        }
+    if (width <= 768) {
+        $("footer .call").attr("href", "https://api.whatsapp.com/send?phone=745333355566")
+    }
 
 }
