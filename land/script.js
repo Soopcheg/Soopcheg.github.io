@@ -23,7 +23,7 @@ $('#budget').ionRangeSlider({
 });
 
 $('#click').ionRangeSlider({
-    min: 20, // минимальное значение
+    min: 3, // минимальное значение
     max: 1500, // максимальное значение
     from: 10, // предустановленное значение ОТ
     type: "single", // тип слайдера
@@ -54,7 +54,7 @@ function showRequests() {
 
     function cutNumber(number) {
         if (!isInteger(number))
-            return number.toFixed(2);
+            return number.toFixed(0);
         return number;
     }
 
