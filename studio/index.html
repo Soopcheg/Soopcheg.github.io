@@ -14,22 +14,35 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex">
-                    <div class="logo d-flex">
-                        <img src="img/logo.png">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="logo d-flex order-0">
+                        <img src="img/logo.png" alt="digitaldesign.agency">
                         <p>Студия разработки продающих сайтов и упаковки бизнеса</p>
                     </div>
-                    <nav class="d-flex">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Полезные статьи</a></li>
-                        <li><a href="#">Наши услуги</a></li>
-                        <li><a href="#">Контакты</a></li>
+                    <nav class="order-md-1 order-2">
+                        <div class="burger">
+                            <div class="burger__top"></div>
+                            <div class="burger__mid d-flex">
+                                <div class="burger__left"></div>
+                                <div class="burger__right"></div>
+                            </div>
+                            <div class="burger__bot"></div>
+                        </div>
+                        <ul class="nav-hidden d-flex flex-md-row flex-column">
+                            <li><a href="#" class="nav__item-active">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Полезные статьи</a></li>
+                            <li><a href="#">Наши услуги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
                     </nav>
-                    <address class="header__contacts d-flex flex-column align-items-end">
+                    <address
+                        class="header__contacts d-flex flex-md-column flex-row align-items-lg-end align-items-center justify-content-around order-md-2 order-1">
                         <a href="mailto:info@digitaldesign.agency" class="email">info@digitaldesign.agency</a>
                         <a href="tel:+79999999999" class="phone">+7(999)999-99-99</a>
                         <a href="#" class="callback">Заказать звонок</a>
+                        <a href="mailto:info@digitaldesign.agency" class="email-mob"></a>
+                        <a href="tel:+79999999999" class="phone-mob"></a>
                     </address>
                 </div>
             </div>
@@ -40,7 +53,7 @@
         <section class="start">
             <div class="container start__block">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-md-5 col-12">
                         <h2>Реализуем ваш проект и будет хорошо</h2>
                         <p>Мы такие все молодцы,что всем дадим люлей
                             . И будем лизать вам жопу на протяжении всего нашего
@@ -56,7 +69,7 @@
                 <div class="row">
                     <div class="col-12">
                         <h2>Наши услуги</h2>
-                        <ul class="d-flex">
+                        <ul class="d-flex justify-content-between flex-md-row flex-column">
                             <li><button class="service__btn">Разработка сайтов</button></li>
                             <li><button class="service__btn service__btn-active">Упаковка Бизнеса</button></li>
                             <li><button class="service__btn">Интернет Маркетинг</button></li>
@@ -179,18 +192,18 @@
         <section class="request">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 m-auto">
+                    <div class="col-xl-10 col-12 m-auto">
                         <div class="request__sendoff">
                             <h2>Отправь заявку и мы бесплатно проконсультьруем.</h2>
                             <p class="request__preform">Введите данные, мы свяжемся в течение 10 минут для уточнения
                                 деталей проекта</p>
                             <form action="">
-                                <div class="d-flex">
+                                <div class="d-flex flex-sm-row flex-column">
                                     <div class="request__sendoff-left">
                                         <p>Введите ваше имя:</p>
                                         <input type="text" placeholder="Введите имя">
                                         <p>Выберите удобный способ связи:</p>
-                                        <div class="d-flex" style="margin-bottom: 3px">
+                                        <div class="d-flex flex-md-row flex-sm-column flex-row flex-mini-column" style="margin-bottom: 3px">
                                             <div class="radio-btn">
                                                 <input type="radio" name="communication" id="email-top" value="email"
                                                     checked>
@@ -234,7 +247,7 @@
         <section class="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 ml-auto mr-auto">
+                    <div class="col-xl-10 col-12 ml-auto mr-auto">
                         <h2>Портфолио</h2>
                         <div class="d-flex flex-wrap portfolio__storage">
                             <div class="portfolio__site-one">
@@ -282,11 +295,11 @@
         <section class="advantage">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 ml-auto mr-auto">
+                    <div class="col-sm-10 col-12 ml-auto mr-auto">
                         <h2>Преимущества</h2>
                         <ul class="d-flex flex-wrap justify-content-center">
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -294,7 +307,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -302,7 +315,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -310,7 +323,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -318,7 +331,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -326,7 +339,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="advantage__text">
                                     <p class="advantage__header">Реализуем ваш проект</p>
                                     <p class="advantage__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -341,11 +354,11 @@
         <section class="steps">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 ml-auto mr-auto">
+                    <div class="col-sm-10 col-12 ml-auto mr-auto">
                         <h2>Шаги работ</h2>
                         <ul class="d-flex flex-wrap justify-content-center">
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -353,7 +366,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -361,7 +374,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -369,7 +382,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -377,7 +390,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -385,7 +398,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="steps__text">
                                     <p class="steps__header">Реализуем ваш проект</p>
                                     <p class="steps__description">Lorem ipsum dolor sit amet, consectetur
                                         adipisicing
@@ -400,18 +413,18 @@
         <section class="request">
             <div class="container">
                 <div class="row">
-                    <div class="col-10 m-auto">
+                    <div class="col-xl-10 col-12 m-auto">
                         <div class="request__sendoff">
                             <h2>Отправь заявку и мы бесплатно проконсультьруем.</h2>
                             <p class="request__preform">Введите данные, мы свяжемся в течение 10 минут для уточнения
                                 деталей проекта</p>
                             <form action="">
-                                <div class="d-flex">
+                                <div class="d-flex flex-sm-row flex-column">
                                     <div class="request__sendoff-left">
                                         <p>Введите ваше имя:</p>
                                         <input type="text" placeholder="Введите имя">
                                         <p class="d-flex">Выберите удобный способ связи:</p>
-                                        <div class="d-flex" style="margin-bottom: 3px">
+                                        <div class="d-flex flex-md-row flex-sm-column flex-row flex-mini-column" style="margin-bottom: 3px">
                                             <div class="radio-btn">
                                                 <input type="radio" name="communication" id="email-bottom" value="email"
                                                     checked>
@@ -458,22 +471,27 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 d-flex">
+                <div class="col-12 d-flex justify-content-between">
                     <div class="logo d-flex">
-                        <img src="img/logo.png">
+                        <img src="img/logo.png" alt="digitaldesign.agency">
                         <p>Студия разработки продающих сайтов и упаковки бизнеса</p>
                     </div>
-                    <nav class="d-flex">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Полезные статьи</a></li>
-                        <li><a href="#">Наши услуги</a></li>
-                        <li><a href="#">Контакты</a></li>
+                    <nav>
+                        <ul class="d-md-flex d-none">
+                            <li><a href="#" class="nav__item-active">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Полезные статьи</a></li>
+                            <li><a href="#">Наши услуги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
                     </nav>
-                    <address class="footer__contacts d-flex flex-column align-items-end">
+                    <address
+                        class="footer__contacts d-flex flex-md-column flex-row align-items-lg-end align-items-center justify-content-around">
                         <a href="mailto:info@digitaldesign.agency" class="email">info@digitaldesign.agency</a>
                         <a href="tel:+79999999999" class="phone">+7(999)999-99-99</a>
                         <a href="#" class="callback">Заказать звонок</a>
+                        <a href="mailto:info@digitaldesign.agency" class="email-mob"></a>
+                        <a href="tel:+79999999999" class="phone-mob"></a>
                     </address>
                 </div>
             </div>
